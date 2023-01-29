@@ -102,7 +102,8 @@ body {
 }
 
 .nav-main {
-  background-color: #01c6b1;
+  /* background-color: #01c6b1; */
+  background: linear-gradient(90deg, #139dcd -25.9%, #00c1ac -25.8%);
   color: white;
   position: sticky;
 }
@@ -215,14 +216,22 @@ section {
   color: rgba(255, 255, 255);
   border: none;
   border-radius: 2rem;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 1rem;
 }
 
 /* ************************************************************************** */
 @media screen and (max-width: 740px) {
-  .landing-nav-container {
-    font-size: 0.3rem;
+  .landing-navbar {
+    font-size: 0.45rem;
+    font-family: "Montserrat-Bold";
+  }
+
+  .landing-text {
+    top: 60%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
   }
 
   section {

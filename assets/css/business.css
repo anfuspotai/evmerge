@@ -1,0 +1,66 @@
+.business-solutions-text-div {
+  position: relative;
+  /* height: 80vh; */
+}
+
+.business-solutions-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.business-solutions-card {
+  background-color: #edeef0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#network-solutions {
+  background-color: rgba(128, 128, 128, 0.352);
+}
+
+.network-solutions-text-div {
+  position: relative;
+  /* height: 80vh; */
+}
+
+.network-solutions-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.network-solutions-card {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#service-section {
+  background: linear-gradient(90deg, #139dcd -25.9%, #00c1ac -25.8%);
+}
+
+.service-head {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat-Bold";
+}
+.service-card:hover {
+  transition: ease-in-out 300ms all;
+  transform: scale(1.3);
+  z-index: 1;
+  cursor: pointer;
+}
+.service-title {
+  font-family: "Montserrat-Bold";
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
