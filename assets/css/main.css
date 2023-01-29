@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("woff2");
+}
+
+/* ************************************************************************** */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat-Regular";
+  /* overflow: overlay; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ************************************************************************** */
+
+.landing-nav-container {
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.landing-navbar {
+  background-color: rgba(0, 0, 0, 0.092);
+}
+
+.landing-text-div {
+  height: 80vh;
+}
+
+.landing-text {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-text-header {
+  font-family: "Montserrat-Bold";
+  font-size: 3.5rem;
+}
+
+.landing-text-desc {
+  font-family: "Montserrat-SemiBold";
+}
+
+.nav-link-landing {
+  color: white;
+  padding: 1rem;
+}
+
+.btn-teal {
+  background-color: #01c6b1;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  max-height: 40px;
+}
+
+.nav-main {
+  background-color: #01c6b1;
+  color: white;
+  position: sticky;
+}
+
+.nav-link-main {
+  color: white !important;
+  padding: 1rem 2rem !important;
+}
+
+section {
+  padding: 5rem 10rem !important;
+  margin: 0;
+}
+
+.section-header {
+  font-family: "Montserrat-Bold";
+  color: rgba(0, 0, 0, 0.62);
+  font-size: 3rem;
+}
+
+.section-text {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.62);
+}
+
+.card-title {
+  font-family: "Montserrat-Bold";
+  color: rgba(0, 0, 0, 0.62);
+}
+
+#consumer-solutions {
+  background-color: rgba(128, 128, 128, 0.352);
+}
+
+.consumer-solutions-text-div {
+  position: relative;
+  /* height: 80vh; */
+}
+
+.consumer-solutions-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.consumer-solutions-card {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#app-install {
+  background-color: rgba(0, 0, 255, 0.708);
+  background-image: url("../Images/home-page/app-install-bg.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 40vh;
+}
+
+.app-install-text-1 {
+  font-family: "Montserrat-Bold";
+  font-size: 2.4rem;
+}
+
+.app-install-text-2 {
+  font-family: "Montserrat-Regular";
+  font-size: 1.6rem;
+}
+
+.app-install-text-3 {
+  font-family: "Montserrat-SemiBold";
+  font-size: 2rem;
+}
+
+.app-install-image {
+  width: 40%;
+}
+
+.app-install-btn-div {
+  position: absolute;
+  bottom: 0%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.app-install-btn {
+  color: white;
+  /* background-color: #000; */
+  /* border: solid white 1px; */
+  /* height: 30px; */
+}
+
+.app-install-btn img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.footer-head {
+  font-family: "Montserrat-Bold";
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-btn {
+  background-color: #00c6b1;
+  color: rgba(255, 255, 255);
+  border: none;
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+}
+
+/* ************************************************************************** */
+@media screen and (max-width: 740px) {
+  .landing-nav-container {
+    font-size: 0.3rem;
+  }
+
+  section {
+    padding: 5rem 1.6rem 0 1.6rem !important;
+    margin: 0;
+  }
+
+  .app-install-btn-div {
+    /* height: 100%; */
+    /* min-height: 100vh; */
+    bottom: -5%;
+    right: -10%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #app-install {
+    font-size: 1.4rem;
+  }
+}
