@@ -5,16 +5,18 @@
 
 .business-solutions-text {
   position: absolute;
+  min-width: 100%;
   top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
 }
 
 .business-solutions-card {
   background-color: #edeef0;
+  max-width: 50%;
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 65%;
   transform: translate(-50%, -50%);
 }
 
@@ -29,6 +31,7 @@
 
 .network-solutions-text {
   position: absolute;
+  min-width: 100% ;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -36,8 +39,9 @@
 
 .network-solutions-card {
   position: absolute;
+  max-width: 50%;
   top: 70%;
-  left: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
 }
 
