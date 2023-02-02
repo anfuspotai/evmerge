@@ -228,8 +228,8 @@ section {
 
 .app-install-btn-div {
   position: absolute;
-  bottom: 0%;
-  right: 15%;
+  bottom: -10%;
+  right: 5%;
   transform: translate(-50%, -50%);
 }
 
