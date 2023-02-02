@@ -1,0 +1,36 @@
+#plan-section{
+  background-color: aquamarine;
+}
+.fleet-card .card-img {
+  filter: sepia(50%) saturate(100%) brightness(50%) hue-rotate(90deg);
+}
+
+.app-info-card-text{
+  font-family: 'Montserrat-Bold';
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.592);
+}
+
+.app-info-card-img{
+  width: 60%;
+}
+
+.plan-card-body{
+  background: white;
+  border-radius: 2rem;
+  /* padding: 5rem; */
+  /* mar: 5rem; */
+  text-align: center;
+}
+
+.plan-card-footer{
+  color: white;
+  font-family: 'Montserrat-Bold';
+  text-align: center;
+  margin-top: .6rem;
+}
+
+.plan-card img{
+  width: 50%;
+  color: white !important;
+}
