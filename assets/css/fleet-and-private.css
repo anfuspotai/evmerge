@@ -1,5 +1,5 @@
 #service-section {
-  background: linear-gradient(90deg, #139dcd -25.9%, #00c1ac -25.8%);
+  background: linear-gradient(90deg, rgba(19,163,209,1) 80%, rgba(6, 160, 212, 0.793) 100%);
 }
 
 .service-head {
@@ -9,7 +9,7 @@
 }
 
 .service-card{
-  transition: ease-in-out 300ms all;
+  transition: ease-in-out 500ms all;
   cursor: pointer;
 }
 
@@ -20,6 +20,9 @@
 
 .service-title {
   font-family: "Montserrat-Bold";
+  font-size: 14px;
+  text-align: center;
+  width: 90%;
   color: white;
   position: absolute;
   bottom: 0;
@@ -33,10 +36,13 @@
     rgba(19, 163, 209, 0.6) 0%,
     rgba(0, 198, 177, 0.5) 100%
   ) !important;
-
+  border-radius: 10% !important;
   font-family: "Montserrat-SemiBold";
-}
 
+}
+.fleet-card, .card-img{
+  border-radius: 10% !important;
+}
 
 .app-info-card-text {
   font-family: "Montserrat-Bold";
@@ -63,7 +69,17 @@
   ) !important;
 }
 
-.partner-head {
+.partner-head{
   font-family: "Montserrat-Bold";
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+
 }
+.fleet-head{
+  font-family: "Montserrat-Bold";
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #606060;
+}
+
+

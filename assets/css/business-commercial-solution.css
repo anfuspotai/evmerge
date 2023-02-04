@@ -4,8 +4,16 @@
     rgba(19, 163, 209, 0.6) 0%,
     rgba(0, 198, 177, 0.5) 100%
   ) !important;
-
+  border-radius: 10% !important;
   font-family: "Montserrat-SemiBold";
+
+}
+.fleet-card, .card-img{
+  border-radius: 10% !important;
+}
+
+.card-img-overlay p {
+  margin-top: -24px;
 }
 
 #plan-section {
@@ -21,7 +29,8 @@
 .plan-card-body {
   background: white;
   border-radius: 1rem;
-  padding: 1rem;
+  /* padding: 1rem; */
+  padding: 2rem 0rem 2rem 0rem !important;
   text-align: center;
 }
 
@@ -35,7 +44,7 @@
 }
 
 .plan-card img {
-  width: 100%;
+  width: 50%;
 }
 
 .plan-section-head {
@@ -69,5 +78,13 @@
 
 .partner-head{
   font-family: "Montserrat-Bold";
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+
+}
+.solution-head{
+  font-family: "Montserrat-Bold";
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #606060;
 }

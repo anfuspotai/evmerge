@@ -45,7 +45,7 @@
   transform: translate(-50%, -50%);
 }
 #service-section {
-  background: linear-gradient(90deg, #139dcd -25.9%, #00c1ac -25.8%);
+  background: linear-gradient(90deg, rgba(19,163,209,1) 80%, rgba(6, 160, 212, 0.793) 100%);
 }
 
 .service-head {
@@ -55,7 +55,7 @@
 }
 
 .service-card {
-  transition: ease-in-out 300ms all;
+  transition: ease-in-out 500ms all;
   cursor: pointer;
 }
 
@@ -66,6 +66,9 @@
 
 .service-title {
   font-family: "Montserrat-Bold";
+  font-size: 14px;
+  text-align: center;
+  width: 90%;
   color: white;
   position: absolute;
   bottom: 0;
