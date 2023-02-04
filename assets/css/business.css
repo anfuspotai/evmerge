@@ -31,7 +31,7 @@
 
 .network-solutions-text {
   position: absolute;
-  min-width: 100% ;
+  min-width: 100%;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,7 +44,6 @@
   left: 35%;
   transform: translate(-50%, -50%);
 }
-
 #service-section {
   background: linear-gradient(90deg, #139dcd -25.9%, #00c1ac -25.8%);
 }
@@ -54,12 +53,17 @@
   color: white;
   font-family: "Montserrat-Bold";
 }
-.service-card:hover {
+
+.service-card {
   transition: ease-in-out 300ms all;
-  transform: scale(1.3);
-  z-index: 1;
   cursor: pointer;
 }
+
+.service-card.active {
+  transform: scale(1.3);
+  z-index: 1;
+}
+
 .service-title {
   font-family: "Montserrat-Bold";
   color: white;

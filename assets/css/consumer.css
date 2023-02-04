@@ -26,7 +26,6 @@
   transition: ease-in-out 200ms;
 }
 
-
 .benefit-card:hover {
   transform: scale(1.2);
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -43,8 +42,30 @@
 .benefit-card span {
   /* padding: 1rem; */
   /* font-family: 'Montserrat-SemiBold'; */
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.8);
   margin: 2rem 0;
 }
 
+#earn-section img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* top: 0; */
+  width: 50vw;
+}
+
+#earn-section {
+  position: relative;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 163, 209, 1) 0%,
+    rgba(0, 198, 177, 1) 100%
+  ) !important;
+}
+
+.earn-head {
+  font-size: 2.5rem;
+  font-family: "Montserrat-Bold";
+}
