@@ -1,36 +1,73 @@
-#plan-section{
-  background-color: aquamarine;
-}
-.fleet-card .card-img {
-  filter: sepia(50%) saturate(100%) brightness(50%) hue-rotate(90deg);
+.fleet-card .card-img-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(19, 163, 209, 0.6) 0%,
+    rgba(0, 198, 177, 0.5) 100%
+  ) !important;
+
+  font-family: "Montserrat-SemiBold";
 }
 
-.app-info-card-text{
-  font-family: 'Montserrat-Bold';
-  font-size: .8rem;
+#plan-section {
+  background: linear-gradient(
+    90deg,
+    rgba(19, 163, 209, 1) 0%,
+    rgba(0, 198, 177, 1) 100%
+  ) !important;
+
+  color: white;
+}
+
+.plan-card-body {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.plan-card-footer {
+  color: white;
+  font-family: "Montserrat-SemiBold";
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0.6rem 0 0 0;
+  padding: 0;
+}
+
+.plan-card img {
+  width: 100%;
+}
+
+.plan-section-head {
+  font-family: "Montserrat-Bold";
+}
+
+.app-info-card-text {
+  font-family: "Montserrat-Bold";
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.592);
+  padding: 0;
+  margin: 0;
 }
 
-.app-info-card-img{
+.app-info-card-text.right {
+  text-align: right;
+}
+
+.app-info-card-img {
   width: 60%;
 }
 
-.plan-card-body{
-  background: white;
-  border-radius: 2rem;
-  /* padding: 5rem; */
-  /* mar: 5rem; */
-  text-align: center;
-}
-
-.plan-card-footer{
+#partner-section {
   color: white;
-  font-family: 'Montserrat-Bold';
-  text-align: center;
-  margin-top: .6rem;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 163, 209, 1) 0%,
+    rgba(0, 198, 177, 1) 100%
+  ) !important;
 }
 
-.plan-card img{
-  width: 50%;
-  color: white !important;
+.partner-head{
+  font-family: "Montserrat-Bold";
+  font-size: 2rem;
 }
