@@ -72,13 +72,23 @@ body {
   ) !important;
 }
 
-.nav-link-landing.active {
+/* .nav-link-landing.active {
   background: linear-gradient(
     180deg,
     rgba(0, 198, 177, 0.2) 0%,
     rgba(19, 163, 209, 0.8) 100%
   ) !important;
-}
+} */
+
+@media screen and (min-width: 768px) {
+  /* //For Laptops */
+     .nav-padding{
+      padding-left: 4rem;
+     }
+     .nav-padding-right{
+      padding-right: 3.5rem;
+     }
+  }
 
 .dropdown:hover .dropdown-menu {
   display: block;

@@ -34,28 +34,39 @@
 
     <nav class="navbar landing-navbar">
         <div class="row w-100 align-items-center">
-
-            <div class="col-md-9 col-11 d-flex  justify-content-center">
-
-                <a class="nav-link nav-link-landing active" aria-current="page" href="#"> Our Company </a>
-
-                <a class="nav-link nav-link-landing" href="./business.html">Business</a>
-
-                <a class="nav-link nav-link-landing" href="#">Consumer</a>
-
+    
+            <div class="col-md-9 col-11 d-flex pl-5 nav-padding">
+    
+                <a class="nav-link nav-link-landing active" aria-current="page" href="/"> Our Company </a>
+    
+                <div class="nav-link nav-link-landing dropdown">
+                    <a class="dropdown-toggle text-decoration-none text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Business
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./business-commercial-solution.html">Business & Commercial</a></li>
+                        <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet & Networks </a></li>
+                        <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li>
+                    </ul>
+                </div>
+    
+    
+                <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
+    
                 <a class="nav-link nav-link-landing" href="#">Partner with Us</a>
-
+    
             </div>
-
-            <div class="col-md-3 col-1 d-flex">
-                <button class="btn-teal me-4 d-md-block d-none">User Sign Up</button>
-                <button class="btn-teal me-2">
+    
+            <div class="col-md-3 col-1 d-flex justify-content-end nav-padding-right">
+                <button class="btn-log me-4 d-md-block d-none" style="font-size: 14px;">User Sign Up</button>
+                <button class="btn-log me-2" style="font-size: 14px;">
                     <span class="d-md-block d-none">Host Login</span>
                     <span class="d-sm-block d-md-none"><i class="fas fa-user"></i></span>
                 </button>
             </div>
         </div>
-
+    
     </nav>
     <!-- First Nav Bar Ends -->
 
