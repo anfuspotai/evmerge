@@ -21,361 +21,376 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="./assets/css/main.css">
 
+    <style>
+        .btn-gradient {
+            background: linear-gradient(90deg, rgba(19, 163, 209, 1) 0%, rgba(0, 198, 177, 1) 100%) !important;
+        }
+    </style>
+
 </head>
 
 
 <body>
 
-<div class="header-banner" style="background-image: url('./assets/Images/home-page/landing-image.png');"> </div>
+    <!-- First Nav Bar -->
 
+    <div class="header-banner" style="background-image: url('./assets/Images/home-page/landing-image.png');"> </div>
 
-<!-- First Nav Bar -->
+    <nav class="navbar landing-navbar">
+        <div class="row w-100 align-items-center">
 
-<style>
-    .btn-gradient {
-        background: linear-gradient(90deg, rgba(19, 163, 209, 1) 0%, rgba(0, 198, 177, 1) 100%) !important;
-    }
-</style>
+            <div class="col-md-9 col-11 d-flex pl-5 nav-padding">
 
-<nav class="navbar landing-navbar">
-    <div class="row w-100 align-items-center">
+                <a class="nav-link nav-link-landing active" aria-current="page" href="./index.html"> Our Company </a>
 
-        <div class="col-md-9 col-11 d-flex pl-5 nav-padding">
-
-            <a class="nav-link nav-link-landing active" aria-current="page" href="./index.html"> Our Company </a>
-
-            <div class="nav-link nav-link-landing dropdown">
-                <a class="dropdown-toggle text-decoration-none text-white" href="./index.html" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Business
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./business-commercial-solution.html">Business & Commercial</a></li>
-                    <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet & Networks </a></li>
-                    <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li>
-                </ul>
-            </div>
-
-
-            <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
-
-            <a class="nav-link nav-link-landing" href="#">Partner with Us</a>
-
-        </div>
-
-        <div class="col-md-3 col-1 d-flex justify-content-end nav-padding-right">
-            <button class="btn-log me-4 d-md-block d-none" style="font-size: 14px;">User Sign Up</button>
-            <button class="btn-log me-2" style="font-size: 14px;">
-                <span class="d-md-block d-none">Host Login</span>
-                <span class="d-sm-block d-md-none"><i class="fas fa-user"></i></span>
-            </button>
-        </div>
-    </div>
-
-</nav>
-
-<!-- First Nav Bar Ends -->
-
-<!-- Second Nav Bar -->
-
-<nav class="navbar navbar-expand-lg bg-trasparent sticky-top nav-main">
-    <div class="container-fluid">
-
-        <!-- Nav Brand -->
-        <a class="navbar-brand" href="#">
-            <img src="./assets/Images/logo_white.png" style="width: 200px;" alt="EVMerge">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-md-5 mb-2 mb-lg-0 text-center">
-                <li class="nav-item">
-                    <a class="nav-link nav-link-main active" aria-current="page" href="#"> Home </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link nav-link-main dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Charging Solutions
+                <div class="nav-link nav-link-landing dropdown dropdown-business">
+                    <a class="dropdown-toggle text-decoration-none text-white" href="./index.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Business
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Business Solution</a></li>
-                        <li><a class="dropdown-item" href="#">Consumer Solution</a></li>
+                    <ul class="dropdown-menu dropdown-menu-business" data-bs-popper="static">
+                        <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
+                                Commercial</a></li>
+                        <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet & Networks </a></li>
+                        <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-main" href="#">App</a>
-                </li>
+                </div>
 
-                <li class="nav-item">
-                    <a class="nav-link nav-link-main" href="#">Contact Us</a>
-                </li>
 
-            </ul>
+                <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
 
+                <a class="nav-link nav-link-landing" href="#">Partner with Us</a>
+
+            </div>
+
+            <div class="col-md-3 col-1 d-flex justify-content-end nav-padding-right">
+                <button class="btn-log me-4 d-md-block d-none" style="font-size: 14px;" data-bs-toggle="modal"
+                    data-bs-target="#signup-modal">User Sign Up
+                </button>
+                <button class="btn-log me-2" style="font-size: 14px;" data-bs-toggle="modal"
+                    data-bs-target="#signup-modal">
+                    <span class="d-md-block d-none">Host Login</span>
+                    <span class="d-sm-block d-md-none"><i class="fas fa-user"></i></span>
+                </button>
+            </div>
         </div>
-    </div>
 
-</nav>
+    </nav>
 
-<!-- Second Nav Bar Ends -->
+    <!-- First Nav Bar Ends -->
 
-<div class="landing-text-div">
-    <div class="landing-text">
-        <span class="landing-text-header">EV Charging <br> made simple.</span>
-        <p class="landing-text-desc mt-4">
-            Electric Vehicleas are disrupting the auto intustry and we are disrupting
-            the EV Charging intustry by bringing chargers closer to you.
-        </p>
-        <!-- <button class="btn-teal  mt-4">Learn more</button> -->
-    </div>
-</div>
+    <!-- Second Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg bg-trasparent sticky-top nav-main">
+        <div class="container-fluid">
+
+            <!-- Nav Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/Images/logo_white.png" style="width: 200px;" alt="EVMerge">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-md-5 mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main active" aria-current="page" href="#"> Home </a>
+                    </li>
+
+                    <li class="nav-item dropdown dropdown-main">
+                        <a class="nav-link nav-link-main dropdown-toggle" href="./index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Charging Solutions
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-main" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="./consumer.html">Consumer Solution</a></li>
+                            <li class="dropend dropdown-main-sub">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Business Solution</a>
+                                <ul class="dropdown-menu dropdown-menu-main-sub" data-bs-popper="static">
+                                    <li><a class="dropdown-item" href="./business-commercial-solution.html">Business Solution</a></li>
+                                    <li><a class="dropdown-item" href="./business.html"> Consumer Solution </a></li>
+                                </ul>
 
 
-<!-- Container -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">App</a>
+                    </li>
 
-<div class="container-fluid g-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contact-modal">Contact Us</a>
+                    </li>
 
-    <!-- Business Solutions -->
+                </ul>
 
-    <section id="business-solutions" class="">
-        <span class="section-header">Business Solutions</span>
-        <div class="row">
+            </div>
+        </div>
 
-            <p class="col-md-8 col-12 section-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officia
-                perferendis nihil sit ad! Perferendis aperiam ipsum iusto alias, voluptates dolor minima expedita
-                mollitia. Tenetur adipisci enim quis doloremque praesentium!
-                <br>
-                <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid optio facere quidem numquam in
-                exercitationem dicta debitis quos repudiandae laborum, et odit reiciendis asperiores accusamus
-                repellat consectetur recusandae cupiditate ducimus.
+    </nav>
+
+    <!-- Second Nav Bar Ends -->
+
+    <div class="landing-text-div">
+        <div class="landing-text">
+            <span class="landing-text-header">EV Charging <br> made simple.</span>
+            <p class="landing-text-desc mt-4">
+                Electric Vehicleas are disrupting the auto intustry and we are disrupting
+                the EV Charging intustry by bringing chargers closer to you.
             </p>
+            <!-- <button class="btn-teal  mt-4">Learn more</button> -->
         </div>
-        <a href="./business.html" class="btn-teal">Learn more</a>
+    </div>
 
-        <!-- Business Solutions Card Start-->
 
-        <div class="row mt-5">
+    <!-- Container -->
 
-            <div class="col-md-3 col-6">
-                <div class="card border-0 p-3">
-                    <div class="card-img-top-shadow">
-                        <img src="./assets/Images/home-page/Untitled-1-02.png" class="card-img-top rounded-4 shadow-sm"
-                            alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"> Commercial <br> Solutions </h5>
+    <div class="container-fluid g-0">
+
+        <!-- Business Solutions -->
+
+        <section id="business-solutions" class="">
+            <span class="section-header">Business Solutions</span>
+            <div class="row">
+
+                <p class="col-md-8 col-12 section-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officia
+                    perferendis nihil sit ad! Perferendis aperiam ipsum iusto alias, voluptates dolor minima expedita
+                    mollitia. Tenetur adipisci enim quis doloremque praesentium!
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid optio facere quidem numquam in
+                    exercitationem dicta debitis quos repudiandae laborum, et odit reiciendis asperiores accusamus
+                    repellat consectetur recusandae cupiditate ducimus.
+                </p>
+            </div>
+            <a href="./business.html" class="btn-teal">Learn more</a>
+
+            <!-- Business Solutions Card Start-->
+
+            <div class="row mt-5">
+
+                <div class="col-md-3 col-6">
+                    <div class="card border-0 p-3">
+                        <div class="card-img-top-shadow">
+                            <img src="./assets/Images/home-page/Untitled-1-02.png"
+                                class="card-img-top rounded-4 shadow-sm" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Commercial <br> Solutions </h5>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 col-6">
-                <div class="card border-0 p-3">
-                    <div class="card-img-top-shadow">
-                        <img src="./assets/Images/home-page/Untitled-1-03.png" class="card-img-top rounded-4 shadow-sm"
-                            alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"> Fleet <br> Solutions </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-6">
-                <div class="card border-0 p-3">
-                    <div class="card-img-top-shadow">
-                        <img src="./assets/Images/home-page/Untitled-1-04.png" class="card-img-top rounded-4 shadow-sm"
-                            alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"> Infrastructure <br> Solutions </h5>
+                <div class="col-md-3 col-6">
+                    <div class="card border-0 p-3">
+                        <div class="card-img-top-shadow">
+                            <img src="./assets/Images/home-page/Untitled-1-03.png"
+                                class="card-img-top rounded-4 shadow-sm" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Fleet <br> Solutions </h5>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 col-6">
-                <div class="card border-0 p-3">
-                    <div class="card-img-top-shadow">
-                        <img src="./assets/Images/home-page/home-card.png" class="card-img-top rounded-4 shadow-sm"
-                            alt="...">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"> Operation &<br> Maintenance </h5>
+                <div class="col-md-3 col-6">
+                    <div class="card border-0 p-3">
+                        <div class="card-img-top-shadow">
+                            <img src="./assets/Images/home-page/Untitled-1-04.png"
+                                class="card-img-top rounded-4 shadow-sm" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Infrastructure <br> Solutions </h5>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card border-0 p-3">
+                        <div class="card-img-top-shadow">
+                            <img src="./assets/Images/home-page/home-card.png" class="card-img-top rounded-4 shadow-sm"
+                                alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Operation &<br> Maintenance </h5>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-        </div>
-        <!-- Business Solutions Card Ends-->
-    </section>
-    <!-- Business Solutions Ends-->
+            <!-- Business Solutions Card Ends-->
+        </section>
+        <!-- Business Solutions Ends-->
 
 
 
-    <!-- 
+        <!-- 
     <section id="business-solutions-card" class="container pt-3">
 
     </section> -->
 
 
 
-    <!-- Consumer Solutions-->
+        <!-- Consumer Solutions-->
 
-    <section id="consumer-solutions" class="mt-5 py-0" style="position: relative;">
-        <div class="row g-0 ">
+        <section id="consumer-solutions" class="mt-5 py-0" style="position: relative;">
+            <div class="row g-0 ">
 
-            <div class="col-6 h1 fw-bold consumer-solutions-text-div" style="min-height: 600px;">
-                <span class="consumer-solutions-text section-header"> Consumer Solutions </span>
-                <!-- <span class="section-header">Consumer <br> Solutions</span> -->
-            </div>
-
-            <div class="col-6" style="background-image: url('./assets/Images/home-page/Untitled-1-02.png');">
-
-            </div>
-
-        </div>
-
-        <div class="card border-0 consumer-solutions-card">
-            <div class="row g-0 p-5 d-flex align-items-center">
-                <div class="col-md-9 section-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid optio facere quidem numquam in
-                    exercitationem dicta debitis quos repudiandae laborum, et odit reiciendis asperiores.
+                <div class="col-6 h1 fw-bold consumer-solutions-text-div" style="min-height: 600px;">
+                    <span class="consumer-solutions-text section-header"> Consumer Solutions </span>
+                    <!-- <span class="section-header">Consumer <br> Solutions</span> -->
                 </div>
-                <div class="col-md-3">
-                    <button onclick="window.location.href='./consumer.html'" class="col-12 btn-teal p-2"> Learn more </button>
-                </div>
-            </div>
-        </div>
 
-    </section>
-    <!-- Consumer Solutions Ends-->
-
-
-
-    <!-- App Install Section-->
-
-    <section id="app-install" style="position: relative;color: white;">
-        <div class="row d-flex align-items-center">
-
-            <div class="col-md-4 d-flex justify-content-end">
-                <span class="app-install-text-1">
-                    One App for <br>
-                    all your charging <br>
-                    services.
-                </span>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="./assets/Images/home-page/app-install-logo.png" alt="" class="app-install-image">
-            </div>
-
-            <div class="col-md-4 d-flex justify-content-start">
-                <div>
-                    <span class="app-install-text-2">
-                        Sign up and be a <br>
-                        part of our community!
-                    </span><br>
-                    <span class="app-install-text-3">
-                        Download <br>
-                        the app now!
-                    </span>
+                <div class="col-6" style="background-image: url('./assets/Images/home-page/Untitled-1-02.png');">
 
                 </div>
 
             </div>
 
-        </div>
-
-
-
-
-        <div class="app-install-btn-div">
-
-            <a class="app-install-btn d-flex" href="https://apple.com">
-
-                <img src="./assets/Images/home-page/app-appstore.png" alt="Appstore">
-
-            </a>
-
-            <a class="app-install-btn d-flex" href="https://google.com">
-
-                <img src="./assets/Images/home-page/app-playstore.png" alt="Playstore">
-
-            </a>
-
-        </div>
-
-
-
-    </section>
-    <!-- App Install Section Ends-->
-
-
-    <!-- Footer -->
-    <section class="footer pb-0">
-
-        <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-                <h5> Company </h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5> About Us </h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5> Contact Us </h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <span class="footer-head mb-5">Keep up to date with our journey.</span>
-                <form>
-
-                    <div class="w-100">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control mb-3 rounded-4 shadow-lg border-0"
-                            placeholder="Email">
-                        <button class="footer-btn shadow-sm btn-teal" type="button">Subscribe</button>
+            <div class="card border-0 consumer-solutions-card">
+                <div class="row g-0 p-5 d-flex align-items-center">
+                    <div class="col-md-9 section-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid optio facere quidem numquam in
+                        exercitationem dicta debitis quos repudiandae laborum, et odit reiciendis asperiores.
                     </div>
-                </form>
+                    <div class="col-md-3">
+                        <button onclick="window.location.href='./consumer.html'" class="col-12 btn-teal p-2"> Learn more
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-6 col-md-2 mb-3 d-flex justify-content-end">
-                <div>
+        </section>
+        <!-- Consumer Solutions Ends-->
 
+
+
+        <!-- App Install Section-->
+
+        <section id="app-install" style="position: relative;color: white;">
+            <div class="row d-flex align-items-center">
+
+                <div class="col-md-4 d-flex justify-content-end">
+                    <span class="app-install-text-1">
+                        One App for <br>
+                        all your charging <br>
+                        services.
+                    </span>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="./assets/Images/home-page/app-install-logo.png" alt="" class="app-install-image">
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-start">
+                    <div>
+                        <span class="app-install-text-2">
+                            Sign up and be a <br>
+                            part of our community!
+                        </span><br>
+                        <span class="app-install-text-3">
+                            Download <br>
+                            the app now!
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="app-install-btn-div">
+
+                <a class="app-install-btn d-flex" href="https://apple.com">
+
+                    <img src="./assets/Images/home-page/app-appstore.png" alt="Appstore">
+
+                </a>
+
+                <a class="app-install-btn d-flex" href="https://google.com">
+
+                    <img src="./assets/Images/home-page/app-playstore.png" alt="Playstore">
+
+                </a>
+
+            </div>
+
+
+
+        </section>
+        <!-- App Install Section Ends-->
+
+
+        <!-- Footer -->
+        <section class="footer pb-0">
+
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5> Company </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5> About Us </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
                     <h5> Contact Us </h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 text-muted -border-top">
-            <p>© 2023 emerge.com, Inc. All rights reserved</p>
-            <!-- <ul class="list-unstyled d-flex">
+                <div class="col-md-4 mb-3">
+                    <span class="footer-head mb-5">Keep up to date with our journey.</span>
+                    <form>
+
+                        <div class="w-100">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control mb-3 rounded-4 shadow-lg border-0"
+                                placeholder="Email">
+                            <button class="footer-btn shadow-sm btn-teal" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3 d-flex justify-content-end">
+                    <div>
+
+                        <h5> Contact Us </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 text-muted -border-top">
+                <p>© 2023 emerge.com, Inc. All rights reserved</p>
+                <!-- <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-dark" href="#">
                     
                 </li>
@@ -386,20 +401,120 @@
                     
                 </li>
             </ul> -->
+            </div>
+
+        </section>
+
+        <!-- Footer Ends-->
+
+
+
+    </div>
+    <!-- Root Container Ends -->
+
+    <!-- Modals -->
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <form class="">
+
+                        <h2 class="mb-3 fw-bold text-center"> Welcome </h2>
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-8 mb-3">
+                                <label for="reg-fname" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="reg-fname" placeholder="First Name">
+                            </div>
+
+                            <div class="col-8 mb-3">
+                                <label for="reg-lname" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="reg-lname" placeholder="Last Name">
+                            </div>
+
+                            <div class="col-8 mb-3">
+                                <label for="reg-email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="reg-email" placeholder="Email address">
+                            </div>
+
+                            <div class="col-8 mb-3">
+                                <label for="reg-pass" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="reg-pass" placeholder="Password">
+                            </div>
+
+                            <div class="col-8 my-3 text-center">
+
+                                <button class=" btn-teal p-2 px-5"> Submit </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
         </div>
+    </div>
 
-    </section>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-    <!-- Footer Ends-->
+                    <form class="">
+
+                        <h2 class="mb-3 fw-bold text-center"> Contact Us </h2>
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-8 mb-3">
+                                <label for="contact-name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                            </div>
 
 
+                            <div class="col-8 mb-3">
+                                <label for="contact-email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="contact-email" placeholder="Email address">
+                            </div>
 
-</div>
-<!-- Root Container Ends -->
+                            <div class="col-8 mb-3">
+                                <label for="contact-msg" class="form-label"> Message </label>
+                                <textarea id="contact-msg" class="form-control" rows="5"
+                                    placeholder="Write a message.."></textarea>
+                            </div>
+
+                            <div class="col-8 my-3 text-center">
+
+                                <button class=" btn-teal p-2 px-5"> Submit </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
