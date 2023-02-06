@@ -1,14 +1,15 @@
 .fleet-card .card-img-overlay {
   background: linear-gradient(
     90deg,
-    rgba(19, 163, 209, 0.6) 0%,
-    rgba(0, 198, 177, 0.5) 100%
+    rgba(19, 163, 209, 0.9) 0%,
+    rgba(0, 198, 177, 0.8) 100%
   ) !important;
   border-radius: 10% !important;
   font-family: "Montserrat-SemiBold";
-
 }
-.fleet-card, .card-img{
+
+.fleet-card,
+.card-img {
   border-radius: 10% !important;
 }
 
@@ -51,7 +52,7 @@
   font-family: "Montserrat-Bold";
 }
 
-.zig-zag-div{
+.zig-zag-div {
   margin-top: 10rem;
 }
 
@@ -68,7 +69,12 @@
 }
 
 .app-info-card-img {
+  border-radius: 100%;
   width: 60%;
+}
+
+.app-info-card-img:hover {
+  box-shadow: rgba(12, 148, 221, 0.35) 0px 5px 15px;
 }
 
 #partner-section {
@@ -80,56 +86,52 @@
   ) !important;
 }
 
-.partner-head{
+.partner-head {
   font-family: "Montserrat-Bold";
   font-size: 2.5rem;
   line-height: 1.2;
 }
-.partner-img{
+.partner-img {
   width: 50%;
 }
 
-.solution-head{
+.solution-head {
   font-family: "Montserrat-Bold";
-    font-size: 2.5rem;
-    line-height: 1.2;
-    color: #606060;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #606060;
 }
-
-
 
 /* ************************************************************************** */
 @media screen and (max-width: 740px) {
- 
-  .landing-text-header{
+  .landing-text-header {
     font-size: 1.8rem;
   }
-  .landing-text-desc{
-    font-size: .8rem;
+  .landing-text-desc {
+    font-size: 0.8rem;
   }
 
-  .solution-head{
+  .solution-head {
     font-size: 1.3rem;
   }
 
-  .zig-zag-div{
+  .zig-zag-div {
     margin-top: 5rem;
   }
 
-  .app-info-card-img{
+  .app-info-card-img {
     width: 50%;
   }
-  .app-info-card-text{
+  .app-info-card-text {
     text-align: center;
-    font-size: .6rem;
-    margin-top: .8rem;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
   }
-  .app-info-card-text.right{
+  .app-info-card-text.right {
     text-align: center;
   }
 
-  .partner-img{
+  .partner-img {
     width: 80%;
   }
-  
 }

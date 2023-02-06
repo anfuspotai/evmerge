@@ -15,11 +15,17 @@
 .service-card {
   transition: ease-in-out 500ms all;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .service-card.active {
   transform: scale(1.3);
   z-index: 1;
+}
+
+.service-img {
+  filter: brightness(60%);
+  transition: ease-in-out 500ms all;
 }
 
 .service-title {
@@ -32,6 +38,22 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.service-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-family: "Montserrat-Regular";
+  text-align: center;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  line-height: 1.3 !important;
+  padding: 0.5rem;
+  width: 80%;
 }
 
 .fleet-card .card-img-overlay {
@@ -64,8 +86,21 @@
   text-align: right;
 }
 
+.app-info-card-img-div {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+  border-radius: 100%;
+}
+
 .app-info-card-img {
+  border-radius: 100%;
   width: 60%;
+}
+
+.app-info-card-img:hover {
+  box-shadow: rgba(12, 148, 221, 0.35) 0px 5px 15px;
 }
 
 #partner-section {
@@ -82,7 +117,6 @@
   font-size: 2.5rem;
   line-height: 1.2;
 }
-
 
 .partner-img {
   width: 60%;
@@ -103,6 +137,22 @@
     font-size: 0.8rem;
   }
 
+  .service-title {
+    font-size: 0.5rem;
+  }
+
+  .service-card.active {
+    transform: scale(1);
+    z-index: 1;
+  }
+
+  .service-description {
+    font-size: 12px;
+    line-height: 1.3 !important;
+    padding: 0.2rem;
+    width: 95%;
+  }
+
   .fleet-text {
     width: 100%;
   }
@@ -121,14 +171,5 @@
 
   .partner-img {
     width: 80%;
-  }
-
-  .service-title{
-    font-size: .5rem;
-  }
-
-  .service-card.active {
-    transform: scale(1.0);
-    z-index: 1;
   }
 }

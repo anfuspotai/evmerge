@@ -41,7 +41,7 @@
 
             <div class="col-md-9 col-11 d-flex pl-5 nav-padding">
 
-                <a class="nav-link nav-link-landing active" aria-current="page" href="./index.html"> Our Company </a>
+                <a class="nav-link nav-link-landing active" aria-current="page" href="./business.html"> Our Company </a>
 
                 <div class="nav-link nav-link-landing dropdown dropdown-business">
                     <a class="dropdown-toggle text-decoration-none text-white" href="./index.html" role="button"
@@ -52,19 +52,20 @@
                         <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
                                 Commercial</a></li>
                         <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet & Networks </a></li>
-                        <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li>
+                        <!-- <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li> -->
                     </ul>
                 </div>
 
 
                 <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
 
-                <a class="nav-link nav-link-landing" href="#">Partner with Us</a>
+                <a class="nav-link nav-link-landing" href="#" data-bs-toggle="modal" data-bs-target="#contact-modal">
+                    Partner with Us </a>
 
             </div>
 
             <div class="col-md-3 col-1 d-flex justify-content-end nav-padding-right">
-                <button class="btn-log me-4 d-md-block d-none" style="font-size: 14px;" data-bs-toggle="modal"
+                <button class="btn-log me-2 d-md-block d-none" style="font-size: 14px;" data-bs-toggle="modal"
                     data-bs-target="#signup-modal">User Sign Up
                 </button>
                 <button class="btn-log me-2" style="font-size: 14px;" data-bs-toggle="modal"
@@ -81,11 +82,11 @@
 
     <!-- Second Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg bg-trasparent sticky-top nav-main">
+    <nav class="navbar navbar-expand-lg bg-trasparent sticky-top nav-main px-0">
         <div class="container-fluid">
 
             <!-- Nav Brand -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img src="./assets/Images/logo_white.png" style="width: 200px;" alt="EVMerge">
             </a>
 
@@ -113,7 +114,8 @@
                                 <ul class="dropdown-menu dropdown-menu-main-sub" data-bs-popper="static">
                                     <li><a class="dropdown-item" href="./business-commercial-solution.html">Business
                                             Solution</a></li>
-                                    <li><a class="dropdown-item" href="./business.html"> Consumer Solution </a></li>
+                                    <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet and Network </a>
+                                    </li>
                                 </ul>
 
 
@@ -156,27 +158,26 @@
 
         <!-- Business Solutions -->
 
-        <section id="business-solutions" class="">
+        <section id="business-solutions" class="mt-5">
             <span class="section-header">Business Solutions</span>
             <div class="row">
 
                 <div class="col-md-8 col-12">
 
-                    <p class="section-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officia
-                        perferendis nihil sit ad! Perferendis aperiam ipsum iusto alias, voluptates dolor minima
-                        expedita
-                        mollitia. Tenetur adipisci enim quis doloremque praesentium!
+                    <p class="section-text mb-4">
                         <br>
-                        <br>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid optio facere quidem numquam in
-                        exercitationem dicta debitis quos repudiandae laborum, et odit reiciendis asperiores accusamus
-                        repellat consectetur recusandae cupiditate ducimus.
+                        EVMERGE offers a range of business solutions designed to meet the needs of Customers of
+                        different sizes with varying requriements. <br> <br>
+                        EVMERGE supports businesses in transitioning to adopt electrified vehicles and meeting the
+                        charging needs of their customers and employees.<br> <br>
+                        Whether you're a property owner, fleet operator, or service provider, partnering with EVMERGE
+                        can help you to meet the growing demand for electric vehicle charging, and position your
+                        business at the forefront of the sustainable transportation revolution.
                     </p>
 
                 </div>
             </div>
-            <a href="./business.html" class="btn-teal py-1 px-2">Learn more</a>
+            <a href="./business.html" class="btn-teal py-2 px-3">Learn more</a>
 
             <!-- Business Solutions Card Start-->
 
@@ -238,16 +239,17 @@
 
         <!-- Consumer Solutions-->
 
-        <section id="consumer-solutions" class=" py-0" style="position: relative;">
+        <section id="consumer-solutions" class="py-0" style="position: relative;">
             <div class="row g-0 ">
 
-                <div class="col-12 col-md-6 h1 fw-bold consumer-solutions-text-div d-md-block d-none" style="min-height: 600px;">
+                <div class="col-12 col-md-6 h1 fw-bold consumer-solutions-text-div d-md-block d-none"
+                    style="min-height: 600px;">
                     <span class="consumer-solutions-text section-header"> Consumer Solutions </span>
                     <!-- <span class="section-header">Consumer <br> Solutions</span> -->
                 </div>
 
-                <div class="col-12 col-md-6" style="background-image: url('./assets/Images/home-page/Untitled-1-02.png');">
-
+                <div class="col-12 col-md-6"
+                    style="background-image: url('./assets/Images/home-page/Untitled-1-02.png');">
                 </div>
 
             </div>
@@ -257,15 +259,26 @@
                     <div class="col-md-9 section-text">
                         <h5 class=" mt-3 section-header d-sm-block d-md-none"> Consumer Solutions </h5>
                         <span class="section-card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid optio facere quidem numquam in
-                            exercitationem dicta debitis quos repudiandae laborum, et odit reiciendis asperiores.
+                            EVMERGE is a User oriented platform committed to building the network of tomorrow.
+                            Our network of charging stations is expanding rapidly, so you can always find a station when
+                            you need one. <br> <br>
+                            EVMERGE is developing this comprehensive network of EV Charging Stations to provide you with
+                            a wholesome experience that will encourage you to seamlessly transition to Electric
+                            Vehicles.
+
                         </span>
                     </div>
-                    <div class="col-md-3 mt-md-0 mt-3">
-                        <button onclick="window.location.href='./consumer.html'" class="col-12 btn-teal p-2"> Learn more
+                    <div class="col-md-3 mt-md-0 my-3">
+                        <button onclick="window.location.href='./consumer.html'" class="btn-teal py-2 px-4">
+                            Learn more
                         </button>
                     </div>
+
                 </div>
+            </div>
+
+            <div class="row g-0 d-sm-block d-md-none">
+                <img src="./assets/Images/home-page/Untitled-1-02.png" class="w-100" alt="">
             </div>
 
         </section>
@@ -278,7 +291,7 @@
         <section id="app-install" style="position: relative;color: white;">
             <div class="row d-flex align-items-center">
 
-                <div class="col-md-4 d-flex justify-content-end mb-3">
+                <div class="col-md-4 d-flex justify-content-start mb-3">
                     <span class="app-install-text-1">
                         One App for <br>
                         all your charging <br>
@@ -290,7 +303,7 @@
                     <img src="./assets/Images/home-page/app-install-logo.png" alt="" class="app-install-image">
                 </div>
 
-                <div class="col-md-4 d-flex justify-content-start mb-3">
+                <div class="col-md-4 d-flex justify-content-md-end justify-content-start mb-3">
                     <div>
                         <span class="app-install-text-2">
                             Sign up and be a <br>
@@ -400,20 +413,7 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 text-muted -border-top">
-                <p>© 2023 emerge.com, Inc. All rights reserved</p>
-                <!-- <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-dark" href="#">
-                    
-                </li>
-                <li class="ms-3"><a class="link-dark" href="#">
-                    
-                </li>
-                <li class="ms-3"><a class="link-dark" href="#">
-                    
-                </li>
-            </ul> -->
-            </div>
+            <div class="footer-copyright pb-4"> <span>© Raydn Technologies FZCO</span> </div>
 
         </section>
 
@@ -425,6 +425,51 @@
     <!-- Root Container Ends -->
 
     <!-- Modals -->
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="nav-modal" tabindex="-1" aria-labelledby="nav-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <form class="">
+
+                        <h2 class="mb-3 fw-bold text-center"> Contact Us </h2>
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-8 mb-3">
+                                <label for="contact-name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                            </div>
+
+
+                            <div class="col-8 mb-3">
+                                <label for="contact-email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="contact-email" placeholder="Email address">
+                            </div>
+
+                            <div class="col-8 mb-3">
+                                <label for="contact-msg" class="form-label"> Message </label>
+                                <textarea id="contact-msg" class="form-control" rows="5"
+                                    placeholder="Write a message.."></textarea>
+                            </div>
+
+                            <div class="col-8 my-3 text-center">
+
+                                <button class=" btn-teal p-2 px-5"> Submit </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Register Modal -->
     <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modalLabel" aria-hidden="true">

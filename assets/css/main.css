@@ -18,6 +18,19 @@
   src: url("../fonts/Montserrat-SemiBold.ttf") format("woff2");
 }
 
+:root {
+  --primary-font-size: 3.5rem;
+  --primary-font-size-s: 2rem;
+
+  --seconday-font-size: 16px;
+  --seconday-font-size: 16px;
+
+  --regular-font-size: 12px;
+  --regular-font-size: 12px;
+}
+
+/* var(--blue) */
+
 /* ************************************************************************** */
 
 * {
@@ -128,8 +141,8 @@ a:hover {
   z-index: 10000;
   background: linear-gradient(
     180deg,
-    rgba(0, 198, 177, 1) 0%,
-    rgba(19, 163, 209, 1) 100%
+    rgba(0, 198, 177, 0.9) 0%,
+    rgba(19, 163, 209, 0.9) 100%
   ) !important;
 }
 
@@ -180,7 +193,7 @@ a:hover {
 
 .landing-text-header {
   font-family: "Montserrat-Bold";
-  font-size: 3rem;
+  font-size: var(--primary-font-size);
   line-height: 1.2;
 }
 
@@ -200,38 +213,48 @@ a:hover {
   border: none;
   border-radius: 1rem;
   padding: 0.2rem 0.5rem;
-  max-height: 40px;
+  transition: ease-in-out 500ms all;
+  /* max-height: 40px; */
 }
 
 .btn-log {
-  background-color: transparent;
-  border: solid 2px;
+  background: transparent;
+  border: solid 2px #07b9bd;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.2rem 0.9rem;
+  transition: ease-in-out 500ms all;
+  /* max-height: 40px; */
+}
+
+.btn-log:hover {
   background: linear-gradient(
     90deg,
     rgba(19, 163, 209, 1) 0%,
     rgba(0, 198, 177, 1) 100%
-  );
-  color: white;
-  border: none;
-  border-radius: 1rem;
-  padding: 0.2rem 0.5rem;
-  max-height: 40px;
+  ) !important;
 }
 
 .btn-white {
   background: white;
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   border: none;
   border-radius: 1rem;
   padding: 0.2rem 0.5rem;
-  max-height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: ease-in-out 300ms all;
+  /* max-height: 40px; */
+  /* font-size: 14px; */
 }
 
-.section-card-text{
+.btn-white:hover {
+  transform: scale(0.93);
+}
+
+.section-card-text {
   display: block;
   width: 90%;
 }
-
 
 .nav-main {
   /* background-color: #01c6b1; */
@@ -325,7 +348,7 @@ section {
 
 .app-install-text-1 {
   font-family: "Montserrat-Bold";
-  font-size: 2.4rem;
+  font-size: 2.3rem;
 }
 
 .app-install-text-2 {
@@ -339,7 +362,7 @@ section {
 }
 
 .app-install-image {
-  width: 40%;
+  width: 50%;
 }
 
 .app-install-btn-div {
@@ -360,6 +383,10 @@ section {
   max-width: 100px;
   margin-bottom: 1rem;
   object-fit: cover;
+}
+
+.footer {
+  background: #dbdcde;
 }
 
 .footer-logo {
@@ -393,6 +420,11 @@ section {
   font-size: 1rem;
 }
 
+.footer-copyright {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+}
+
 #signup-modal .modal-body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: white;
@@ -401,8 +433,8 @@ section {
   z-index: 10001;
   background: linear-gradient(
     90deg,
-    rgba(2, 120, 159, 0.6) 0%,
-    rgba(0, 90, 81, 0.8) 100%
+    rgba(2, 120, 159, 0.9) 0%,
+    rgba(0, 90, 81, 0.9) 100%
   );
 }
 
@@ -449,8 +481,8 @@ section {
   border-radius: 0;
   background: linear-gradient(
     90deg,
-    rgba(19, 163, 209, 0.4) 0%,
-    rgba(0, 198, 177, 0.6) 100%
+    rgba(2, 120, 159, 0.9) 0%,
+    rgba(0, 90, 81, 0.9) 100%
   );
 }
 
@@ -479,10 +511,13 @@ section {
   }
 
   .landing-text {
-    top: 60%;
-    left: 50%;
+    top: 52%;
+    left: 40%;
     width: 70%;
     transform: translate(-50%, -50%);
+  }
+  .landing-text-header {
+    font-size: 2.5rem;
   }
 
   section {
@@ -490,7 +525,7 @@ section {
     margin: 0;
   }
 
-  .section-card-text{
+  .section-card-text {
     display: inline;
     width: 100%;
   }
@@ -499,8 +534,8 @@ section {
     font-size: 0.7rem;
   }
 
-  #consumer-solutions{
-    padding:0 !important;
+  #consumer-solutions {
+    padding: 0 !important;
     margin: 0;
   }
 
@@ -509,7 +544,7 @@ section {
     padding: 2rem;
     margin: 0;
     width: 100vw;
-    top: 0; 
+    top: 0;
     left: 0;
     transform: none;
     border-radius: 0;
