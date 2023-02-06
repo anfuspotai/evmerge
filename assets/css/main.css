@@ -218,10 +218,20 @@ a:hover {
   max-height: 40px;
 }
 
+.btn-white {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  max-height: 40px;
+}
+
 .section-card-text{
   display: block;
   width: 90%;
 }
+
 
 .nav-main {
   /* background-color: #01c6b1; */
