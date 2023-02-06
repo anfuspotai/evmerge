@@ -75,6 +75,8 @@ a:hover {
 
 .nav-link-landing {
   color: white !important;
+  padding: 1rem;
+  font-size: 16px;
 }
 
 .nav-link-landing:hover {
@@ -188,12 +190,6 @@ a:hover {
   line-height: 1.2;
 }
 
-.nav-link-landing {
-  color: white;
-  padding: 1rem;
-  font-size: 16px;
-}
-
 .btn-teal {
   background: linear-gradient(
     90deg,
@@ -220,6 +216,11 @@ a:hover {
   border-radius: 1rem;
   padding: 0.2rem 0.5rem;
   max-height: 40px;
+}
+
+.section-card-text{
+  display: block;
+  width: 90%;
 }
 
 .nav-main {
@@ -323,8 +324,8 @@ section {
 }
 
 .app-install-text-3 {
-  font-family: "Montserrat-SemiBold";
-  font-size: 2rem;
+  font-family: "Montserrat-Bold";
+  font-size: 1.8rem;
 }
 
 .app-install-image {
@@ -351,10 +352,26 @@ section {
   object-fit: cover;
 }
 
+.footer-logo {
+  width: 20vw;
+  max-width: 250px;
+}
+
 .footer-head {
   font-family: "Montserrat-Bold";
   font-size: 1.7rem;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-sub-head {
+  font-family: "Montserrat-Bold";
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-address {
+  font-size: 0.7rem;
 }
 
 .footer-btn {
@@ -446,6 +463,11 @@ section {
     font-family: "Montserrat-Bold";
   }
 
+  .nav-link-landing {
+    padding: 1rem;
+    font-size: 1.7vw;
+  }
+
   .landing-text {
     top: 60%;
     left: 50%;
@@ -456,6 +478,31 @@ section {
   section {
     padding: 5rem 1.6rem 0 1.6rem !important;
     margin: 0;
+  }
+
+  .section-card-text{
+    display: inline;
+    width: 100%;
+  }
+
+  #business-solutions .card-title {
+    font-size: 0.7rem;
+  }
+
+  #consumer-solutions{
+    padding:0 !important;
+    margin: 0;
+  }
+
+  .consumer-solutions-card {
+    position: inherit;
+    padding: 2rem;
+    margin: 0;
+    width: 100vw;
+    top: 0; 
+    left: 0;
+    transform: none;
+    border-radius: 0;
   }
 
   .app-install-btn-div {
@@ -469,5 +516,23 @@ section {
 
   #app-install {
     font-size: 1.4rem;
+  }
+
+  .app-install-btn-div {
+    position: absolute;
+    bottom: -4%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+  }
+
+  .app-install-btn img {
+    max-width: 80px;
+    /* margin-bottom: 1rem; */
+    object-fit: cover;
+  }
+
+  .footer-logo {
+    width: 40vw;
+    /* max-width: 250px; */
   }
 }
