@@ -28,111 +28,112 @@
     <!-- <div class="header-banner-shade"></div> -->
 </div>
 
-<!-- First Nav Bar -->
+    <!-- First Nav Bar -->
 
-<div class="header-banner" style="background-image: url('./assets/Images/home-page/landing-image.png');"> </div>
+    <!-- d-md-block d-none -->
+    <nav class="navbar landing-navbar">
+        <div class="row w-100 align-items-center">
 
-<nav class="navbar landing-navbar">
-    <div class="row w-100 align-items-center">
+            <div class="col-md-6 col-6 d-flex pl-5 nav-padding">
 
-        <div class="col-md-9 col-11 d-flex pl-5 nav-padding">
+                <a class="nav-link nav-link-landing active" aria-current="page" href="./business.html"> Our Company </a>
 
-            <a class="nav-link nav-link-landing active" aria-current="page" href="./business.html"> Our Company </a>
+                <div class="nav-link nav-link-landing dropdown dropdown-business">
+                    <a class="dropdown-toggle text-decoration-none text-white" href="./index.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Business
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-business" data-bs-popper="static">
+                        <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
+                                Commercial</a></li>
+                        <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet & Networks </a></li>
+                        <!-- <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li> -->
+                    </ul>
+                </div>
 
-            <div class="nav-link nav-link-landing dropdown dropdown-business">
-                <a class="dropdown-toggle text-decoration-none text-white" href="./index.html" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Business
-                </a>
-                <ul class="dropdown-menu dropdown-menu-business" data-bs-popper="static">
-                    <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
-                            Commercial</a></li>
-                    <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet & Networks </a></li>
-                    <!-- <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li> -->
-                </ul>
+
+                <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
+
+                <a class="nav-link nav-link-landing" href="#" data-bs-toggle="modal" data-bs-target="#contact-modal">
+                    Partner with Us </a>
+
             </div>
 
-
-            <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
-
-            <a class="nav-link nav-link-landing" href="#" data-bs-toggle="modal" data-bs-target="#contact-modal">
-                Partner with Us </a>
-
+            <div class="col-md-6 col-6 d-flex justify-content-end nav-padding-right">
+                <button class="btn-log me-2 d-md-block d-none" style="font-size: 14px;" data-bs-toggle="modal"
+                    data-bs-target="#signup-modal">User Sign Up
+                </button>
+                <button class="btn-log me-2" style="font-size: 14px;" data-bs-toggle="modal"
+                    data-bs-target="#signup-modal">
+                    <span class="d-md-block d-none">Host Login</span>
+                    <span class="d-sm-block d-md-none"><i class="fas fa-user"></i></span>
+                </button>
+            </div>
         </div>
 
-        <div class="col-md-3 col-1 d-flex justify-content-end nav-padding-right">
-            <button class="btn-log me-2 d-md-block d-none" style="font-size: 14px;" data-bs-toggle="modal"
-                data-bs-target="#signup-modal">User Sign Up
+    </nav>
+
+    <!-- First Nav Bar Ends -->
+
+    <!-- Second Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg bg-trasparent sticky-top nav-main px-0">
+        <div class="container-fluid nav-two-right">
+
+            <!-- Nav Brand -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/Images/logo_white.png" style="width: 200px;" alt="EVMerge">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="btn-log me-2" style="font-size: 14px;" data-bs-toggle="modal" data-bs-target="#signup-modal">
-                <span class="d-md-block d-none">Host Login</span>
-                <span class="d-sm-block d-md-none"><i class="fas fa-user"></i></span>
-            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-md-5 mb-2 mb-lg-0 text-center">
+                    <li class="nav-item  mb-4 mb-md-0">
+                        <a class="nav-link nav-link-main active" aria-current="page" href="#"> Home </a>
+                    </li>
+
+                    <li class="nav-item mb-4 mb-md-0 mb-md-0 dropdown dropdown-main">
+                        <a class="nav-link nav-link-main dropdown-toggle" href="./index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Charging Solutions
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-main" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="./consumer.html">Consumer Solution</a></li>
+                            <li class="dropend dropdown-main-sub">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Business Solution</a>
+                                <ul class="dropdown-menu dropdown-menu-main-sub" data-bs-popper="static">
+                                    <li><a class="dropdown-item" href="./business-commercial-solution.html">Business
+                                            Solution</a></li>
+                                    <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet and Network </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mb-4 mb-md-0 mb-md-0">
+                        <a class="nav-link nav-link-main" href="#">App</a>
+                    </li>
+
+                    <li class="nav-item mb-4 mb-md-0 mb-md-0">
+                        <a class="nav-link nav-link-main" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contact-modal">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
         </div>
-    </div>
 
-</nav>
+    </nav>
 
-<!-- First Nav Bar Ends -->
-
-<!-- Second Nav Bar -->
-
-<nav class="navbar navbar-expand-lg bg-trasparent sticky-top nav-main px-0">
-    <div class="container-fluid">
-
-        <!-- Nav Brand -->
-        <a class="navbar-brand" href="./index.html">
-            <img src="./assets/Images/logo_white.png" style="width: 200px;" alt="EVMerge">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-md-5 mb-2 mb-lg-0 text-center mt-5">
-                <li class="nav-item mb-4 mb-md-0">
-                    <a class="nav-link nav-link-main active" aria-current="page" href="#"> Home </a>
-                </li>
-
-                <li class="nav-item mb-4 mb-md-0 dropdown dropdown-main">
-                    <a class="nav-link nav-link-main dropdown-toggle" href="./index.html" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Charging Solutions
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-main" data-bs-popper="static">
-                        <li><a class="dropdown-item" href="./consumer.html">Consumer Solution</a></li>
-                        <li class="dropend dropdown-main-sub">
-                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Business Solution</a>
-                            <ul class="dropdown-menu dropdown-menu-main-sub" data-bs-popper="static">
-                                <li><a class="dropdown-item" href="./business-commercial-solution.html">Business
-                                        Solution</a></li>
-                                <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet and Network </a>
-                                </li>
-                            </ul>
-
-
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item mb-4 mb-md-0">
-                    <a class="nav-link nav-link-main" href="#">App</a>
-                </li>
-
-                <li class="nav-item mb-4 mb-md-0">
-                    <a class="nav-link nav-link-main" href="#" data-bs-toggle="modal"
-                        data-bs-target="#contact-modal">Contact Us</a>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-
-</nav>
-
-<!-- Second Nav Bar Ends -->
+    <!-- Second Nav Bar Ends -->
 
 <div class="landing-text-div">
     <div class="landing-text">
