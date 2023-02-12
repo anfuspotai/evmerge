@@ -16,7 +16,7 @@
   font-family: "Montserrat-Bold";
 }
 
-#benefit-section{
+#benefit-section {
   background-color: #ecedef;
   padding-top: 8rem !important;
   padding-bottom: 8rem !important;
@@ -36,7 +36,8 @@
 
 .benefit-card:hover {
   transform: scale(1.2);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   z-index: 1;
   border-color: rgba(0, 0, 0, 0.077);
 }
@@ -77,4 +78,62 @@
   font-size: 2.5rem;
   font-family: "Montserrat-Bold";
   line-height: 1.2;
+}
+
+.charger-card {
+  border: none;
+  border-radius: 0;
+  max-width: 60%;
+  color: white !important;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 163, 209, 1) 0%,
+    rgba(0, 198, 177, 1) 100%
+    ) !important;
+}
+
+.charger-card .card-body {
+  padding: 4rem 5rem;
+  width: 90%;
+}
+
+.charger-head {
+  font-size: 2.5rem;
+  font-family: "Montserrat-Bold";
+  line-height: 1.2;
+}
+
+.charger-note {
+  font-size: 1rem;
+  font-family: "Montserrat-SemiBold";
+}
+
+.charger-img {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  top: -8%;
+  width: 38%;
+  right: 10%;
+}
+
+/* ************************************************************************** */
+@media screen and (max-width: 740px) {
+
+  #charger-section{
+    margin: 0rem !important;
+    padding: 0rem !important;
+  }
+
+  #charger-section .container{
+    margin: 0;
+    padding: 0;
+  }
+  .charger-card {
+    max-width: 100%;
+  }
+  
+  .charger-card .card-body {
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
 }
