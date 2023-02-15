@@ -35,8 +35,7 @@
     <div class="header-banner" style="background-image: url('./assets/Images/home-page/landing-image.png');"> </div>
     <!-- First Nav Bar -->
 
-    <!-- d-md-block d-none -->
-    <nav class="navbar landing-navbar">
+    <nav class="navbar landing-navbar d-md-block d-none">
         <div class="row w-100 align-items-center">
 
             <div class="col-md-6 col-6 d-flex pl-5 nav-padding">
@@ -57,7 +56,7 @@
                 </div> -->
 
                 <a class="nav-link nav-link-landing" href="./business.html">Business</a>
-                
+
                 <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
 
                 <a class="nav-link nav-link-landing" href="#" data-bs-toggle="modal" data-bs-target="#contact-modal">
@@ -91,9 +90,7 @@
                 <img src="./assets/Images/logo_white.png" style="width: 200px;" alt="EVMerge">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#nav-modal">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -114,7 +111,7 @@
                                     aria-expanded="false">Business Solution</a>
                                 <ul class="dropdown-menu dropdown-menu-main-sub" data-bs-popper="static">
                                     <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
-                                        Commercial</a></li>
+                                            Commercial</a></li>
                                     <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet and Network </a>
                                     </li>
                                 </ul>
@@ -318,13 +315,13 @@
                             <a class="app-install-btn mt-5" href="https://apple.com">
 
                                 <img src="./assets/Images/home-page/app-appstore.png" alt="Appstore">
-            
+
                             </a>
-            
+
                             <a class="app-install-btn" href="https://google.com">
-            
+
                                 <img src="./assets/Images/home-page/app-playstore.png" alt="Playstore">
-            
+
                             </a>
                         </div>
 
@@ -440,45 +437,80 @@
 
     <!-- Modals -->
 
-    <!-- Contact Modal -->
+    <!-- NAV Modal -->
     <div class="modal fade" id="nav-modal" tabindex="-1" aria-labelledby="nav-modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" style="background: transparent !important; border: none;">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body p-5">
+                    <div class="row g-0">
+                        <a class="col-12 nav-modal-item active ps-4" href="./index.html"> Our Company </a>
+                        <div class="col-12 nav-modal-item accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item" style="background: transparent !important;">
+                                <div class="accordion-header" id="flush-headingOne">
 
-                    <form class="">
-
-                        <h2 class="mb-3 fw-bold text-center"> Contact Us </h2>
-
-                        <div class="row justify-content-center">
-
-                            <div class="col-8 mb-3">
-                                <label for="contact-name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                                    <a class="col-12 collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="ps-3">Business </span>
+                                            <i class="fa-solid fa-chevron-down pe-2"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <a class="col-12 nav-modal-item ps-4" href="./business-commercial-solution.html"> Business &
+                                                Commercial</a>
+                                            <div class="col-12 nav-modal-item ps-4" href="./fleet-and-private.html"> Fleet &
+                                                Networks</div>
+                                            <div class="col-12 nav-modal-item ps-4" href="./business.html"> Infrastructure
+                                                Solutions
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-
-                            <div class="col-8 mb-3">
-                                <label for="contact-email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="contact-email" placeholder="Email address">
-                            </div>
-
-                            <div class="col-8 mb-3">
-                                <label for="contact-msg" class="form-label"> Message </label>
-                                <textarea id="contact-msg" class="form-control" rows="5"
-                                    placeholder="Write a message.."></textarea>
-                            </div>
-
-                            <div class="col-8 my-3 text-center">
-
-                                <button class=" btn-teal p-2 px-5"> Submit </button>
-
-                            </div>
-
                         </div>
 
-                    </form>
+                        <a class="col-12 nav-modal-item ps-4" href="./consumer.html"> Consumer</a>
+                        <div class="col-12 nav-modal-item ps-4" href="#" data-bs-toggle="modal" data-bs-target="#signup-modal"> Partner With Us</div>
+                    </div>
+                    <hr>
+
+                    <div class="row  g-0">
+                        <div class="col-12 nav-modal-item-2 accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item" style="background: transparent !important;">
+                                <div class="accordion-header" id="flush-headingOne">
+
+                                    <a class="col-12 collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="ps-3">Chargin Solutions </span>
+                                            <i class="fa-solid fa-chevron-down ps-3"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-12 nav-modal-item-2 ps-4" href="./consumer.html"> Consumer Solutions </div>
+                                            <div class="col-12 nav-modal-item-2 ps-4" href="./business-commercial-solution.html"> Business & Commercial Solutions
+                                            </div>
+                                            <div class="col-12 nav-modal-item-2 ps-4" href="./fleet-and-private.html"> Fleet & Network </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 nav-modal-item-2 ps-4" href="./index.html#app-install"> App</div>
+                        <div class="col-12 nav-modal-item-2 ps-4" href="#" data-bs-toggle="modal" data-bs-target="#contact-modal"> Contact Us</div>
+                    </div>
+
 
                 </div>
             </div>
@@ -487,41 +519,69 @@
 
     <!-- Register Modal -->
     <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content" style="background: transparent !important; border: none;">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body px-md-5">
+                    <div class="w-100" style="text-align: right;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                    <form class="">
+                    <form class="g-0">
 
-                        <h2 class="mb-3 fw-bold text-center"> Welcome </h2>
+                        <h5 class="mb-3 fw-bold text-center">Become a Partner / Partner with Us / Want a Charger near
+                            You </h5>
 
-                        <div class="row justify-content-center">
+                        <div class="row g-0 justify-content-center">
 
-                            <div class="col-8 mb-3">
-                                <label for="reg-fname" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="reg-fname" placeholder="First Name">
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-fname" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="user-fname" placeholder="First Name">
                             </div>
 
-                            <div class="col-8 mb-3">
-                                <label for="reg-lname" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="reg-lname" placeholder="Last Name">
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-lname" class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" id="user-lname" placeholder="Last Name">
                             </div>
 
-                            <div class="col-8 mb-3">
-                                <label for="reg-email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="reg-email" placeholder="Email address">
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="user-email" placeholder="Email address">
                             </div>
 
-                            <div class="col-8 mb-3">
-                                <label for="reg-pass" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="reg-pass" placeholder="Password">
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-phone" class="form-label">Phone*</label>
+                                <input type="number" class="form-control" id="user-phone" placeholder="Phone">
                             </div>
+
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-city" class="form-label">City*</label>
+                                <input type="text" class="form-control" id="user-city" placeholder="City">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-location" class="form-label">Location*</label>
+                                <input type="text" class="form-control" id="user-location" placeholder="Location">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-landmark" class="form-label">Landmark</label>
+                                <input type="text" class="form-control" id="user-landmark" placeholder="Landmark">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="user-msg" class="form-label"> Message </label>
+                                <input type="text" id="user-msg" class="form-control" placeholder="Write a message..">
+                            </div>
+
+                            <!-- <div class="col-12 mb-3">
+                                <label for="user-msg" class="form-label"> Message </label>
+                                <textarea id="user-msg" class="form-control" rows="3"
+                                    placeholder="Write a message.."></textarea>
+                            </div> -->
 
                             <div class="col-8 my-3 text-center">
-
                                 <button class=" btn-teal p-2 px-5"> Submit </button>
-
                             </div>
 
                         </div>
@@ -535,35 +595,57 @@
 
     <!-- Contact Modal -->
     <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content" style="background: transparent !important; border: none;">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body px-5">
+                    <div class="w-100" style="text-align: right;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                    <form class="">
+                    <form class="g-0">
 
                         <h2 class="mb-3 fw-bold text-center"> Contact Us </h2>
 
                         <div class="row justify-content-center">
 
-                            <div class="col-8 mb-3">
-                                <label for="contact-name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-fname" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="contact-fname" placeholder="First Name">
                             </div>
 
 
-                            <div class="col-8 mb-3">
-                                <label for="contact-email" class="form-label">Email address</label>
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-lname" class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" id="contact-lname" placeholder="Last Name">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-email" class="form-label">Email*</label>
                                 <input type="email" class="form-control" id="contact-email" placeholder="Email address">
                             </div>
 
-                            <div class="col-8 mb-3">
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-phone" class="form-label">Phone*</label>
+                                <input type="number" class="form-control" id="contact-phone" placeholder="Phone">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="contact-company" placeholder="Company">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="contact-city" placeholder="City">
+                            </div>
+
+                            <div class="col-12 mb-3">
                                 <label for="contact-msg" class="form-label"> Message </label>
-                                <textarea id="contact-msg" class="form-control" rows="5"
+                                <textarea id="contact-msg" class="form-control" rows="3"
                                     placeholder="Write a message.."></textarea>
                             </div>
 
-                            <div class="col-8 my-3 text-center">
+                            <div class="col-6 my-3 text-center">
 
                                 <button class=" btn-teal p-2 px-5"> Submit </button>
 

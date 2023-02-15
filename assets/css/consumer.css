@@ -10,10 +10,31 @@
   color: rgba(0, 0, 0, 0.615);
   font-family: "Montserrat-Bold";
 }
+
+.step-card-div {
+  background: url("../page-5/icons/strokes-02.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  padding: 6rem 0;
+}
+
 .step-card {
-  background-color: #07a8ae;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 163, 209, 1) 0%,
+    rgba(0, 198, 177, 1) 100%
+  );
   color: white !important;
   font-family: "Montserrat-Bold";
+  border-radius: 1.3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: ease-in-out 200ms all;
+}
+
+.step-card:hover {
+  transform: scale(1.1);
 }
 
 #benefit-section {
@@ -89,7 +110,7 @@
     90deg,
     rgba(19, 163, 209, 1) 0%,
     rgba(0, 198, 177, 1) 100%
-    ) !important;
+  ) !important;
 }
 
 .charger-card .card-body {
@@ -119,21 +140,30 @@
 /* ************************************************************************** */
 @media screen and (max-width: 740px) {
 
-  #charger-section{
+  .step-card-div {
+    background: url("../page-5/icons/page\ 5\ strokes\ mobile-02.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    padding: 6rem 0;
+  }
+
+  #charger-section {
     margin: 0rem !important;
     padding: 0rem !important;
   }
 
-  #charger-section .container{
+  #charger-section .container {
     margin: 0;
     padding: 0;
   }
   .charger-card {
     max-width: 100%;
   }
-  
+
   .charger-card .card-body {
     padding: 1rem 1.5rem;
     width: 100%;
   }
+  
 }

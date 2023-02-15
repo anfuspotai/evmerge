@@ -119,14 +119,14 @@ a:hover {
   .nav-two-right {
     padding-right: 6rem;
   }
-  .nav-padding{
+  .nav-padding {
     padding-left: 10rem !important;
   }
-  .navbar-brand{
+  .navbar-brand {
     padding-left: 9rem !important;
   }
-  .landing-text{
-    padding-left: .5rem;
+  .landing-text {
+    padding-left: 0.5rem;
   }
 }
 
@@ -437,7 +437,8 @@ section {
   font-size: 0.9rem;
 }
 
-#signup-modal .modal-body {
+#signup-modal .modal-body,
+#contact-modal .modal-body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: white;
   border: 0;
@@ -450,7 +451,10 @@ section {
   );
 }
 
-#signup-modal input {
+#signup-modal input,
+#signup-modal textarea,
+#contact-modal input,
+#contact-modal textarea {
   border: 0;
   padding: 1rem;
   color: white !important;
@@ -462,17 +466,23 @@ section {
   );
 }
 
-#signup-modal input:focus {
+#signup-modal input:focus,
+#signup-modal textarea:focus,
+#contact-modal input:focus,
+#contact-modal textarea:focus {
   border: 0;
   box-shadow: none;
 }
 
-#signup-modal input::placeholder {
+#signup-modal input::placeholder,
+#signup-modal textarea::placeholder,
+#contact-modal input::placeholder,
+#contact-modal textarea::placeholder {
   color: rgba(255, 255, 255, 0.604);
   opacity: 1;
 }
 
-#contact-modal .modal-body {
+#nav-modal .modal-body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: white;
   border: 0;
@@ -480,34 +490,34 @@ section {
   z-index: 10001;
   background: linear-gradient(
     90deg,
-    rgba(2, 120, 159, 0.6) 0%,
-    rgba(0, 90, 81, 0.8) 100%
+    rgba(2, 120, 159, 1) 0%,
+    rgba(0, 90, 81, 1) 100%
   );
 }
 
-#contact-modal input,
-#contact-modal textarea {
-  border: 0;
-  padding: 1rem;
+.nav-modal-item {
+  font-family: "Montserrat-SemiBold";
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.nav-modal-item-2 {
+  font-family: "Montserrat-Regular";
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.nav-modal-item:hover,
+.nav-modal-item-2:hover,
+.nav-modal-item-2.active,
+.collapse.nav-modal-item {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body{
   color: white !important;
-  border-radius: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 120, 159, 0.9) 0%,
-    rgba(0, 90, 81, 0.9) 100%
-  );
-}
-
-#contact-modal input:focus,
-#contact-modal textarea:focus {
-  border: 0;
-  box-shadow: none;
-}
-
-#contact-modal input::placeholder,
-#contact-modal textarea::placeholder {
-  color: rgba(255, 255, 255, 0.604);
-  opacity: 1;
 }
 
 /* ************************************************************************** */
