@@ -77,4 +77,12 @@
   .about-tab {
     font-size: 1.2rem;
   }
+
+  .team-card .team-title {
+    font-size: .8rem;
+  }
+
+  .team-card .team-designation {
+    font-size: .7rem;
+  }
 }
