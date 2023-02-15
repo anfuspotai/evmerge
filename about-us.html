@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title> EV </title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/about-us.css">
+
+    <style>
+        .btn-gradient {
+            background: linear-gradient(90deg, rgba(19, 163, 209, 1) 0%, rgba(0, 198, 177, 1) 100%) !important;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="header-banner" style="background-image: url('./assets/page-6/images/banner.png');">
+        <div class="header-banner-shade" style="background-color: rgba(0, 0, 0, 0.7);"></div>
+    </div>
+
+    <!-- First Nav Bar -->
+
+    <nav class="navbar landing-navbar d-md-block d-none">
+        <div class="row w-100 align-items-center">
+
+            <div class="col-md-8 col-6 d-flex pl-5 nav-padding">
+
+                <a class="nav-link nav-link-landing active" aria-current="page" href="./about-us.html"> Our Company </a>
+
+                <!-- <div class="nav-link nav-link-landing dropdown dropdown-business">
+                    <a class="dropdown-toggle text-decoration-none text-white" href="./index.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Business
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-business" data-bs-popper="static">
+                        <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
+                                Commercial</a></li>
+                        <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet & Networks </a></li>
+                        <li><a class="dropdown-item" href="./business.html"> Infrastructure Solutions </a></li> 
+                    </ul>
+                </div> -->
+
+                <a class="nav-link nav-link-landing" href="./business.html">Business</a>
+
+                <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
+
+                <a class="nav-link nav-link-landing" href="#" onclick="dynaminForm('Partner with us')">
+                    Partner with Us </a>
+
+            </div>
+
+            <div class="col-md-4 col-6 d-flex justify-content-end nav-padding-right">
+                <button class="btn-log me-2 d-md-block d-none" style="font-size: 14px;" data-bs-toggle="modal"
+                    data-bs-target="#signup-modal">User Sign Up
+                </button>
+                <!-- <button class="btn-log me-2" style="font-size: 14px;" data-bs-toggle="modal"
+                    data-bs-target="#signup-modal">
+                    <span class="d-md-block d-none">Host Login</span>
+                    <span class="d-sm-block d-md-none"><i class="fas fa-user"></i></span>
+                </button> -->
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- First Nav Bar Ends -->
+
+
+    <!-- Second Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg bg-trasparent sticky-top nav-main px-0">
+        <div class="container-fluid nav-two-right">
+
+            <!-- Nav Brand -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/Images/logo_white.png" style="width: 200px;" alt="EVMerge">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#nav-modal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-md-5 mb-2 mb-lg-0 text-center">
+                    <li class="nav-item  mb-4 mb-md-0">
+                        <a class="nav-link nav-link-main active" aria-current="page" href="./index.html"> Home </a>
+                    </li>
+
+                    <li class="nav-item mb-4 mb-md-0 mb-md-0 dropdown dropdown-main">
+                        <a class="nav-link nav-link-main dropdown-toggle" href="./index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Charging Solutions
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-main" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="./consumer.html">Consumer Solution</a></li>
+                            <li class="dropend dropdown-main-sub">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Business Solution</a>
+                                <ul class="dropdown-menu dropdown-menu-main-sub" data-bs-popper="static">
+                                    <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
+                                            Commercial</a></li>
+                                    <li><a class="dropdown-item" href="./fleet-and-private.html"> Fleet and Network </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mb-4 mb-md-0 mb-md-0">
+                        <a class="nav-link nav-link-main" href="./index.html#app-install">App</a>
+                    </li>
+
+                    <li class="nav-item mb-4 mb-md-0 mb-md-0">
+                        <a class="nav-link nav-link-main" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contact-modal">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Second Nav Bar Ends -->
+
+
+
+    <div class="landing-text-div">
+        <div class="row justify-content-center align-items-center g-0 px-4" id="about-us-div">
+            <div class="col-md-6 col-12"> <span class="about-us-head ps-md-5 ps-0"> About Us </span> </div>
+            <div class="col-md-5 col-12 about-us-text">
+                EVMERGE is a EV Charging Solution offered by RAYDN
+                Technologies FZCO, focused towards offering best in class
+                charging services to our Partners (Asset owners / Charger
+                suppliers / Infrastructure developers) and our Customers (end
+                users). <br><br>
+                We merge the most ideally suited technology, know-how and
+                manpower with a customer-centric approach focused on
+                quality, reliability and convenience.
+            </div>
+        </div>
+        <div class="landing-text">
+            <!-- <span class="landing-text-header">EV Charging <br> made simple.</span>
+            <p class="landing-text-desc mt-4">
+                Electric Vehicleas are disrupting the auto intustry and we are disrupting
+                the EV Charging intustry by bringing chargers closer to you.
+            </p> -->
+            <!-- <button class="btn-teal  mt-4">Learn more</button> -->
+        </div>
+    </div>
+
+
+    <!-- Container -->
+
+    <div class="container-fluid g-0">
+
+        <!-- Our Solutions -->
+
+        <section id="our-section" style="background-color:#f2f2f2 ; min-height: 93vh;">
+
+            <!-- Tabs for about us -->
+            <div class="row my-5">
+                <div class="col-md-3 col-6">
+                    <span class="about-tab active" data-target="#our-mission-text"> Our Mission </span>
+                </div>
+                <div class="col-md-3 col-6">
+                    <span class="about-tab" data-target="#our-vision-text"> Our Vision </span>
+                </div>
+            </div>
+
+
+            <div class="row mt-4 our-text-div" id="our-mission-text">
+
+                <div class="col-12 mb-3">
+                    <span class="section-header">To bring charging closer to Users.</span>
+                </div>
+
+                <div class="col-md-6 col-12">
+
+                    <p class="our-text mb-4">
+                        As the world moves towards a more sustainable future, electric
+                        vehicles (EVs) have emerged as a promising solution to reduce
+                        our dependence on fossil fuels and cut down emissions.
+                        However, the success of EVs hinges on the availability of reliable
+                        and convenient charging infrastructure. At our company, we
+                        recognize this critical need and have made it our mission to
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-6 col-12">
+
+                    <p class="our-text mb-4">
+                        bring EV charging closer to users. By building a network of
+                        charging stations that are accessible, affordable, and easy to use,
+                        we are committed to empowering individuals and businesses to
+                        make the switch to electric transportation. Our goal is to make EV
+                        charging as ubiquitous as gas stations, so that EV drivers can
+                        enjoy the convenience and peace of mind that comes with
+                        knowing they can always find a nearby charging point.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row mt-4 our-text-div" id="our-vision-text" style="display: none;">
+
+                <div class="col-12 mb-3">
+                    <span class="section-header">
+                        To change the way people charge <br> their cars in the future.
+                    </span>
+                </div>
+
+                <div class="col-md-6 col-12">
+
+                    <p class="our-text mb-4">
+                        At our company, we don't just see electric vehicle (EV) charging
+                        as a means to an end. We envision a future where charging an EV
+                        is as effortless and habitual as charging a smartphone. Our
+                        mission is to create a world where EV charging becomes a
+                        passive activity in one's life, seamlessly integrated into daily
+                        routines. We believe that the key to achieving this vision lies in
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-6 col-12">
+
+                    <p class="our-text mb-4">
+                        changing the way people charge their cars. By leveraging
+                        cutting-edge technology and design, we aim to make EV
+                        charging an intuitive, frictionless experience that requires
+                        minimal user input. Our goal is to create a future where charging
+                        an EV is so seamless that drivers hardly even notice they're doing
+                        it. With this approach, we hope to accelerate the transition to
+                        sustainable transportation and create a better future for all.
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- Our Solutions Ends-->
+
+
+        <!-- Team Section -->
+
+        <section id="team-section">
+
+
+            <h1 class="text-center mb-4 section-header">Meet Our Team</h1>
+
+            <p class="text-center section-text">
+                We are a group of dedicated professionals who are passionate about making a difference in the world
+                through our work. Our diverse team
+                includes individuals with a wide range of backgrounds and expertise, but we all share a common goal: to
+                create a better future through
+                sustainable innovation.
+            </p>
+
+            <div class="row">
+
+                <div class="col-3 p-4">
+                    <div class="card border-0 team-card" style="background: transparent !important;">
+                        <img src="./assets/page-6/images/founder-01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="card-title text-center">
+                                <span class="team-title">SREECHAND CHANDRASEKHAR</span> <br>
+                                <span class="team-designation">Chief Executive Officer</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-4">
+                    <div class="card border-0 team-card" style="background: transparent !important;">
+                        <img src="./assets/page-6/images/founder-01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="card-title text-center">
+                                <span class="team-title">DERIN THOMAS JOSEN</span> <br>
+                                <span class="team-designation"> Chief Revenue Officer </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-4">
+                    <div class="card border-0 team-card" style="background: transparent !important;">
+                        <img src="./assets/page-6/images/founder-01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="card-title text-center">
+                                <span class="team-title"> AKHIL KOKA </span> <br>
+                                <span class="team-designation"> Director- Business Development </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-4">
+                    <div class="card border-0 team-card" style="background: transparent !important;">
+                        <img src="./assets/page-6/images/founder-01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="card-title text-center">
+                                <span class="team-title"> JEAN-PHILIPPE BONSAUDO </span> <br>
+                                <span class="team-designation"> Director- Growth & Customer Success </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Team Section Ends-->
+
+
+
+        <!-- Footer -->
+        <section class="footer py-0">
+
+            <div class="row py-5">
+                <img src="./assets/logo-clr.png" alt="EVMerge" class="footer-logo">
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="footer-sub-head"> Company </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="./privacy-policy.html"
+                                class="nav-link p-0 text-muted">Privacy policy</a></li>
+                        <li class="nav-item mb-2"><a href="./terms-and-conditions.html"
+                                class="nav-link p-0 text-muted">Terms and conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="footer-sub-head"> About Us </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./about-us.html" class="nav-link p-0 text-muted">About</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="footer-sub-head"> Contact Us </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" onclick="dynaminForm('Become a Partner')"
+                                class="nav-link p-0 text-muted">Become a partner</a></li>
+                        <li class="nav-item mb-2"><a href="#" data-bs-toggle="modal" data-bs-target="#contact-modal"
+                                class="nav-link p-0 text-muted"> Contact us </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-3 px-md-5">
+                    <span class="footer-head mb-5">Keep up to date with our journey.</span>
+
+                    <div class="w-100">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter-email" type="text" class="form-control mb-3 rounded-4 shadow-lg border-0"
+                            placeholder="Email">
+                        <button class="footer-btn shadow-sm btn-teal" id="subscribe-submit" type="button">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-2 mb-3 d-flex justify-content-md-end justify-content-start mt-3 mt-md-0">
+                    <div>
+
+                        <h5> Contact Us </h5>
+                        <ul class="nav flex-column">
+                            <span class="footer-address">
+                                RAYDN Technologies FZCO <br>
+
+                                P.O.Box 18959 <br>
+                                Dubai Digital Park, <br>
+                                Dubai Silicon Oasis, <br>
+                                Dubai, UAE <br> <br>
+                                Email - support@evmerge.com
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright pb-4"> <span>© Raydn Technologies FZCO</span> </div>
+
+        </section>
+
+        <!-- Footer Ends-->
+
+
+
+    </div>
+    <!-- Root Container Ends -->
+
+    <!-- Modals -->
+
+    <!-- NAV Modal -->
+    <div class="modal fade" id="nav-modal" tabindex="-1" aria-labelledby="nav-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body p-5">
+                    <div class="row g-0">
+                        <a class="col-12 nav-modal-item active ps-4" href="./about-us.html"> Our Company </a>
+                        <a class="col-12 nav-modal-item active ps-4" href="./business.html"> Business </a>
+                        <a class="col-12 nav-modal-item ps-4" href="./consumer.html"> Consumer</a>
+                        <a class="col-12 nav-modal-item ps-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#signup-modal"> Partner With Us</a>
+                    </div>
+                    <hr>
+
+                    <div class="row  g-0">
+                        <div class="col-12 nav-modal-item-2 accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item" style="background: transparent !important;">
+                                <div class="accordion-header" id="flush-headingOne">
+
+                                    <a class="col-12 collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="ps-3">Chargin Solutions </span>
+                                            <i class="fa-solid fa-chevron-down ps-3"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <a class="col-12 nav-modal-item-2 ps-4" href="./consumer.html"> Consumer
+                                                Solutions </a>
+                                            <a class="col-12 nav-modal-item-2 ps-4"
+                                                href="./business-commercial-solution.html"> Business & Commercial
+                                                Solutions
+                                            </a>
+                                            <a class="col-12 nav-modal-item-2 ps-4" href="./fleet-and-private.html">
+                                                Fleet & Network </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="col-12 nav-modal-item-2 ps-4" href="./index.html#app-install"> App</a>
+                        <a class="col-12 nav-modal-item-2 ps-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contact-modal"> Contact Us</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body px-md-5">
+
+                    <div class="w-100" style="text-align: right;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <h5 class="mb-3 fw-bold text-center"> Signup </h5>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-fname" class="form-label">First Name*</label>
+                            <input type="text" class="form-control" id="user-fname" placeholder="First Name">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-lname" class="form-label">Last Name*</label>
+                            <input type="text" class="form-control" id="user-lname" placeholder="Last Name">
+                        </div>
+
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="user-email" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-phone" class="form-label">Phone*</label>
+                            <input type="tel" class="form-control" id="user-phone" placeholder="Phone">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-country" class="form-label"> Country</label>
+                            <select id="user-country" class="form-select">
+                                <option value=""> -- Select your country -- </option>
+                                <option value="UAE"> United Arab Emirates </option>
+                                <option value="Saudi Arabia"> Saudi Arabia </option>
+                                <option value="Oman"> Oman </option>
+                                <option value="India"> India </option>
+                                <option value="Kuwait"> Kuwait </option>
+                                <option value="Bahrain"> Bahrain </option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-city" class="form-label">City*</label>
+                            <input type="text" class="form-control" id="user-city" placeholder="City">
+                        </div>
+
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-postal" class="form-label"> Postal code </label>
+                            <input type="number" class="form-control" id="user-postal" placeholder="Postal Code">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-address" class="form-label"> Address </label>
+                            <input type="text" class="form-control" id="user-address" placeholder="Address">
+                        </div>
+
+                        <!-- <div class="col-12 mb-3">
+                                <label for="user-msg" class="form-label"> Message </label>
+                                <textarea id="user-msg" class="form-control" rows="3"
+                                    placeholder="Write a message.."></textarea>
+                            </div> -->
+
+                        <div class="col-8 my-3 text-center">
+                            <button class=" btn-teal p-2 px-5" id="signup-submit"> Submit </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partner Modal -->
+    <div class="modal fade" id="partner-modal" tabindex="-1" aria-labelledby="partner-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body px-md-5">
+                    <div class="w-100" style="text-align: right;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <h5 class="mb-3 fw-bold text-center" id="dynamic-form-title"> Be a Partner </h5>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-fname" class="form-label">First Name*</label>
+                            <input type="text" class="form-control" id="partner-fname" placeholder="First Name">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-lname" class="form-label">Last Name*</label>
+                            <input type="text" class="form-control" id="partner-lname" placeholder="Last Name">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-type" class="form-label"> Type*</label>
+                            <select id="partner-type" class="form-select">
+                                <option value="Company"> Company </option>
+                                <option value="Individual"> Individual </option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="partner-email" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-phone" class="form-label">Phone*</label>
+                            <input type="tel" class="form-control" id="partner-phone" placeholder="Phone">
+                        </div>
+
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-city" class="form-label">City*</label>
+                            <input type="text" class="form-control" id="partner-city" placeholder="City">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-location" class="form-label">Location*</label>
+                            <input type="text" class="form-control" id="partner-location" placeholder="Location">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-landmark" class="form-label">Nearest Landmark</label>
+                            <input type="text" class="form-control" id="partner-landmark" placeholder="Landmark">
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="partner-msg" class="form-label"> Message </label>
+                            <input type="text" id="partner-msg" class="form-control" placeholder="Write a message..">
+                        </div>
+
+                        <!-- <div class="col-12 mb-3">
+                                <label for="partner-msg" class="form-label"> Message </label>
+                                <textarea id="partner-msg" class="form-control" rows="3"
+                                    placeholder="Write a message.."></textarea>
+                            </div> -->
+
+                        <input type="hidden" id="dynamic-form-type">
+
+                        <div class="col-8 my-3 text-center">
+                            <button class=" btn-teal p-2 px-5" id="dynamic-form-submit"> Submit </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body px-5">
+                    <div class="w-100" style="text-align: right;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <form class="">
+
+                        <h2 class="mb-3 fw-bold text-center"> Contact Us </h2>
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-fname" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="contact-fname" placeholder="First Name">
+                            </div>
+
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-lname" class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" id="contact-lname" placeholder="Last Name">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-phone" class="form-label">Phone*</label>
+                                <input type="tel" class="form-control" id="contact-phone" placeholder="Phone">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="contact-company" placeholder="Company">
+                            </div>
+
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="contact-city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="contact-city" placeholder="City">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="contact-msg" class="form-label"> Message </label>
+                                <textarea id="contact-msg" class="form-control" rows="3"
+                                    placeholder="Write a message.."></textarea>
+                            </div>
+
+                            <div class="col-6 my-3 text-center">
+
+                                <button class=" btn-teal p-2 px-5" id="contact-submit"> Submit </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

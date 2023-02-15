@@ -263,6 +263,14 @@ a:hover {
   transform: scale(0.93);
 }
 
+.btn-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(19, 163, 209, 1) 0%,
+    rgba(0, 198, 177, 1) 100%
+  ) !important;
+}
+
 .section-card-text {
   display: block;
   width: 90%;
@@ -344,7 +352,7 @@ section {
 
 .consumer-solutions-card {
   position: absolute;
-  top: 60%;
+  top: 68%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
@@ -437,6 +445,7 @@ section {
   font-size: 0.9rem;
 }
 
+#partner-modal .modal-body,
 #signup-modal .modal-body,
 #contact-modal .modal-body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -451,34 +460,50 @@ section {
   );
 }
 
+#partner-modal input,
+#partner-modal textarea,
+#partner-modal select,
 #signup-modal input,
 #signup-modal textarea,
+#signup-modal select,
 #contact-modal input,
-#contact-modal textarea {
+#contact-modal textarea,
+#contact-modal select {
   border: 0;
   padding: 1rem;
-  color: white !important;
+  /* color: white !important; */
   border-radius: 0;
-  background: linear-gradient(
+  background: rgba(255, 255, 255, 0.9);
+  /* background: linear-gradient(
     90deg,
     rgba(19, 163, 209, 0.4) 0%,
     rgba(0, 198, 177, 0.6) 100%
-  );
+  ); */
 }
 
+#partner-modal input:focus,
+#partner-modal select:focus,
+#partner-modal textarea:focus,
 #signup-modal input:focus,
+#signup-modal select:focus,
 #signup-modal textarea:focus,
 #contact-modal input:focus,
+#contact-modal select:focus,
 #contact-modal textarea:focus {
   border: 0;
   box-shadow: none;
 }
 
+#partner-modal input::placeholder,
+#partner-modal select::placeholder,
+#partner-modal textarea::placeholder,
 #signup-modal input::placeholder,
+#signup-modal select::placeholder,
 #signup-modal textarea::placeholder,
 #contact-modal input::placeholder,
+#contact-modal select::placeholder,
 #contact-modal textarea::placeholder {
-  color: rgba(255, 255, 255, 0.604);
+  /* color: rgba(255, 255, 255, 0.604); */
   opacity: 1;
 }
 
@@ -516,7 +541,7 @@ section {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.accordion-body{
+.accordion-body {
   color: white !important;
 }
 

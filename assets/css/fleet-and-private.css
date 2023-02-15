@@ -59,8 +59,8 @@
 .fleet-card .card-img-overlay {
   background: linear-gradient(
     90deg,
-    rgba(19, 163, 209, 0.9) 0%,
-    rgba(0, 198, 177, 0.8) 100%
+    rgba(12, 127, 166, 0.9) 0%,
+    rgba(1, 137, 123, 0.8) 100%
   ) !important;
   border-radius: 10% !important;
   font-family: "Montserrat-SemiBold";

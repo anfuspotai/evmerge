@@ -1,0 +1,80 @@
+#about-us-div {
+  position: relative;
+  min-height: 100vh;
+  color: white !important;
+  top: -15%;
+}
+
+.about-us-head {
+  font-size: 4rem;
+  font-family: "Montserrat-Bold";
+}
+
+.about-us-text {
+  font-size: 1.2rem;
+}
+
+.about-tab {
+  font-size: 2rem;
+  font-family: "Montserrat-Bold";
+  color: #a6a6a6;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: ease-in-out 200ms all;
+}
+
+.about-tab.active,
+.about-tab:hover {
+  color: #0181a6;
+}
+
+.about-tab::after {
+  content: "";
+  height: 3px;
+  width: 30%;
+  background: #a6a6a6;
+  position: absolute;
+  left: 4%;
+  bottom: -5px;
+}
+
+.about-tab:hover::after,
+.about-tab.active::after {
+  background: #0181a6;
+}
+
+#our-section {
+  padding-top: 5rem;
+}
+.our-text {
+  line-height: 34px;
+  font-size: 1rem;
+}
+.team-card .card-title {
+  font-size: 1rem;
+  width: 120%;
+  left: -10%;
+  /* transform: translateX(-50%, -50%); */
+  position: absolute;
+}
+
+.team-card .team-title {
+  color: #0181a6;
+}
+
+.team-card .team-designation {
+  font-size: .9rem;
+}
+
+/* ************************************************************************** */
+@media screen and (max-width: 740px) {
+  #about-us-div {
+    min-height: 100vh;
+    top: inherit;
+  }
+
+  .about-tab {
+    font-size: 1.2rem;
+  }
+}

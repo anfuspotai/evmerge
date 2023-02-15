@@ -20,27 +20,22 @@
 
     <!-- Custom css -->
     <link rel="stylesheet" href="./assets/css/main.css">
-
-    <style>
-        .btn-gradient {
-            background: linear-gradient(90deg, rgba(19, 163, 209, 1) 0%, rgba(0, 198, 177, 1) 100%) !important;
-        }
-    </style>
-
 </head>
 
 
 <body>
 
     <div class="header-banner" style="background-image: url('./assets/Images/home-page/landing-image.png');"> </div>
+
+
     <!-- First Nav Bar -->
 
     <nav class="navbar landing-navbar d-md-block d-none">
         <div class="row w-100 align-items-center">
 
-            <div class="col-md-6 col-6 d-flex pl-5 nav-padding">
+            <div class="col-md-8 col-6 d-flex pl-5 nav-padding">
 
-                <a class="nav-link nav-link-landing active" aria-current="page" href="./business.html"> Our Company </a>
+                <a class="nav-link nav-link-landing active" aria-current="page" href="./about-us.html"> Our Company </a>
 
                 <!-- <div class="nav-link nav-link-landing dropdown dropdown-business">
                     <a class="dropdown-toggle text-decoration-none text-white" href="./index.html" role="button"
@@ -59,12 +54,12 @@
 
                 <a class="nav-link nav-link-landing" href="./consumer.html">Consumer</a>
 
-                <a class="nav-link nav-link-landing" href="#" data-bs-toggle="modal" data-bs-target="#contact-modal">
+                <a class="nav-link nav-link-landing" href="#" onclick="dynaminForm('Partner with us')">
                     Partner with Us </a>
 
             </div>
 
-            <div class="col-md-6 col-6 d-flex justify-content-end nav-padding-right">
+            <div class="col-md-4 col-6 d-flex justify-content-end nav-padding-right">
                 <button class="btn-log me-2 d-md-block d-none" style="font-size: 14px;" data-bs-toggle="modal"
                     data-bs-target="#signup-modal">User Sign Up
                 </button>
@@ -79,6 +74,7 @@
     </nav>
 
     <!-- First Nav Bar Ends -->
+
 
     <!-- Second Nav Bar -->
 
@@ -121,7 +117,7 @@
                         </ul>
                     </li>
                     <li class="nav-item mb-4 mb-md-0 mb-md-0">
-                        <a class="nav-link nav-link-main" href="#">App</a>
+                        <a class="nav-link nav-link-main" href="./index.html#app-install">App</a>
                     </li>
 
                     <li class="nav-item mb-4 mb-md-0 mb-md-0">
@@ -137,6 +133,7 @@
     </nav>
 
     <!-- Second Nav Bar Ends -->
+
 
     <div class="landing-text-div">
         <div class="landing-text">
@@ -367,42 +364,42 @@
                 <div class="col-6 col-md-2 mb-3">
                     <h5 class="footer-sub-head"> Company </h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="./privacy-policy.html"
+                                class="nav-link p-0 text-muted">Privacy policy</a></li>
+                        <li class="nav-item mb-2"><a href="./terms-and-conditions.html"
+                                class="nav-link p-0 text-muted">Terms and conditions</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
                     <h5 class="footer-sub-head"> About Us </h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="./about-us.html" class="nav-link p-0 text-muted">About</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
                     <h5 class="footer-sub-head"> Contact Us </h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" onclick="dynaminForm('Become a Partner')"
+                                class="nav-link p-0 text-muted">Become a partner</a></li>
+                        <li class="nav-item mb-2"><a href="#" data-bs-toggle="modal" data-bs-target="#contact-modal"
+                                class="nav-link p-0 text-muted"> Contact us </a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 mb-3 px-md-5">
                     <span class="footer-head mb-5">Keep up to date with our journey.</span>
-                    <form>
-
-                        <div class="w-100">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control mb-3 rounded-4 shadow-lg border-0"
-                                placeholder="Email">
-                            <button class="footer-btn shadow-sm btn-teal" type="button">Subscribe</button>
-                        </div>
-                    </form>
+                    
+                    <div class="w-100">
+                        <label for="newsletter-email" class="visually-hidden">Email address</label>
+                        <input id="newsletter-email" type="text" class="form-control mb-3 rounded-4 shadow-lg border-0"
+                            placeholder="Email">
+                        <button class="footer-btn shadow-sm btn-teal" id="subscribe-submit" type="button">Subscribe</button>
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-2 mb-3 d-flex justify-content-md-end justify-content-start mt-3 mt-md-0">
@@ -443,39 +440,11 @@
             <div class="modal-content" style="background: transparent !important; border: none;">
                 <div class="modal-body p-5">
                     <div class="row g-0">
-                        <a class="col-12 nav-modal-item active ps-4" href="./index.html"> Our Company </a>
-                        <div class="col-12 nav-modal-item accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item" style="background: transparent !important;">
-                                <div class="accordion-header" id="flush-headingOne">
-
-                                    <a class="col-12 collapsed" href="#" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="ps-3">Business </span>
-                                            <i class="fa-solid fa-chevron-down pe-2"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="row">
-                                            <a class="col-12 nav-modal-item ps-4" href="./business-commercial-solution.html"> Business &
-                                                Commercial</a>
-                                            <div class="col-12 nav-modal-item ps-4" href="./fleet-and-private.html"> Fleet &
-                                                Networks</div>
-                                            <div class="col-12 nav-modal-item ps-4" href="./business.html"> Infrastructure
-                                                Solutions
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <a class="col-12 nav-modal-item active ps-4" href="./about-us.html"> Our Company </a>
+                        <a class="col-12 nav-modal-item active ps-4" href="./business.html"> Business </a>
                         <a class="col-12 nav-modal-item ps-4" href="./consumer.html"> Consumer</a>
-                        <div class="col-12 nav-modal-item ps-4" href="#" data-bs-toggle="modal" data-bs-target="#signup-modal"> Partner With Us</div>
+                        <a class="col-12 nav-modal-item ps-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#signup-modal"> Partner With Us</a>
                     </div>
                     <hr>
 
@@ -497,18 +466,23 @@
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <div class="row">
-                                            <div class="col-12 nav-modal-item-2 ps-4" href="./consumer.html"> Consumer Solutions </div>
-                                            <div class="col-12 nav-modal-item-2 ps-4" href="./business-commercial-solution.html"> Business & Commercial Solutions
-                                            </div>
-                                            <div class="col-12 nav-modal-item-2 ps-4" href="./fleet-and-private.html"> Fleet & Network </div>
+                                            <a class="col-12 nav-modal-item-2 ps-4" href="./consumer.html"> Consumer
+                                                Solutions </a>
+                                            <a class="col-12 nav-modal-item-2 ps-4"
+                                                href="./business-commercial-solution.html"> Business & Commercial
+                                                Solutions
+                                            </a>
+                                            <a class="col-12 nav-modal-item-2 ps-4" href="./fleet-and-private.html">
+                                                Fleet & Network </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-12 nav-modal-item-2 ps-4" href="./index.html#app-install"> App</div>
-                        <div class="col-12 nav-modal-item-2 ps-4" href="#" data-bs-toggle="modal" data-bs-target="#contact-modal"> Contact Us</div>
+                        <a class="col-12 nav-modal-item-2 ps-4" href="./index.html#app-install"> App</a>
+                        <a class="col-12 nav-modal-item-2 ps-4" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contact-modal"> Contact Us</a>
                     </div>
 
 
@@ -517,8 +491,93 @@
         </div>
     </div>
 
-    <!-- Register Modal -->
+
+    <!-- Signup Modal -->
     <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent !important; border: none;">
+                <div class="modal-body px-md-5">
+
+                    <div class="w-100" style="text-align: right;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+
+                    <h5 class="mb-3 fw-bold text-center"> Signup </h5>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-fname" class="form-label">First Name*</label>
+                            <input type="text" class="form-control" id="user-fname" placeholder="First Name">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-lname" class="form-label">Last Name*</label>
+                            <input type="text" class="form-control" id="user-lname" placeholder="Last Name">
+                        </div>
+
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="user-email" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-phone" class="form-label">Phone*</label>
+                            <input type="tel" class="form-control" id="user-phone" placeholder="Phone">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-country" class="form-label"> Country</label>
+                            <select id="user-country" class="form-select">
+                                <option value=""> -- Select your country -- </option>
+                                <option value="UAE"> United Arab Emirates </option>
+                                <option value="Saudi Arabia"> Saudi Arabia </option>
+                                <option value="Oman"> Oman </option>
+                                <option value="India"> India </option>
+                                <option value="Kuwait"> Kuwait </option>
+                                <option value="Bahrain"> Bahrain </option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-city" class="form-label">City*</label>
+                            <input type="text" class="form-control" id="user-city" placeholder="City">
+                        </div>
+
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-postal" class="form-label"> Postal code </label>
+                            <input type="number" class="form-control" id="user-postal" placeholder="Postal Code">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="user-address" class="form-label"> Address </label>
+                            <input type="text" class="form-control" id="user-address" placeholder="Address">
+                        </div>
+
+                        <!-- <div class="col-12 mb-3">
+                                <label for="user-msg" class="form-label"> Message </label>
+                                <textarea id="user-msg" class="form-control" rows="3"
+                                    placeholder="Write a message.."></textarea>
+                            </div> -->
+
+                        <div class="col-8 my-3 text-center">
+                            <button class=" btn-teal p-2 px-5" id="signup-submit"> Submit </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partner Modal -->
+    <div class="modal fade" id="partner-modal" tabindex="-1" aria-labelledby="partner-modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content" style="background: transparent !important; border: none;">
                 <div class="modal-body px-md-5">
@@ -526,67 +585,74 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <form class="g-0">
 
-                        <h5 class="mb-3 fw-bold text-center">Become a Partner / Partner with Us / Want a Charger near
-                            You </h5>
+                    <h5 class="mb-3 fw-bold text-center" id="dynamic-form-title"> </h5>
 
-                        <div class="row g-0 justify-content-center">
+                    <div class="row justify-content-center">
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-fname" class="form-label">First Name*</label>
-                                <input type="text" class="form-control" id="user-fname" placeholder="First Name">
-                            </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-fname" class="form-label">First Name*</label>
+                            <input type="text" class="form-control" id="partner-fname" placeholder="First Name">
+                        </div>
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-lname" class="form-label">Last Name*</label>
-                                <input type="text" class="form-control" id="user-lname" placeholder="Last Name">
-                            </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-lname" class="form-label">Last Name*</label>
+                            <input type="text" class="form-control" id="partner-lname" placeholder="Last Name">
+                        </div>
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" id="user-email" placeholder="Email address">
-                            </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-type" class="form-label"> Type*</label>
+                            <select id="partner-type" class="form-select">
+                                <option value="Company"> Company </option>
+                                <option value="Individual"> Individual </option>
+                            </select>
+                        </div>
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-phone" class="form-label">Phone*</label>
-                                <input type="number" class="form-control" id="user-phone" placeholder="Phone">
-                            </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="partner-email" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-phone" class="form-label">Phone*</label>
+                            <input type="tel" class="form-control" id="partner-phone" placeholder="Phone">
+                        </div>
 
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-city" class="form-label">City*</label>
-                                <input type="text" class="form-control" id="user-city" placeholder="City">
-                            </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-city" class="form-label">City*</label>
+                            <input type="text" class="form-control" id="partner-city" placeholder="City">
+                        </div>
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-location" class="form-label">Location*</label>
-                                <input type="text" class="form-control" id="user-location" placeholder="Location">
-                            </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-location" class="form-label">Location*</label>
+                            <input type="text" class="form-control" id="partner-location" placeholder="Location">
+                        </div>
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-landmark" class="form-label">Landmark</label>
-                                <input type="text" class="form-control" id="user-landmark" placeholder="Landmark">
-                            </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="partner-landmark" class="form-label">Nearest Landmark</label>
+                            <input type="text" class="form-control" id="partner-landmark" placeholder="Landmark">
+                        </div>
 
-                            <div class="col-md-6 col-12 mb-3">
-                                <label for="user-msg" class="form-label"> Message </label>
-                                <input type="text" id="user-msg" class="form-control" placeholder="Write a message..">
-                            </div>
+                        <div class="col-12 mb-3">
+                            <label for="partner-msg" class="form-label"> Message </label>
+                            <input type="text" id="partner-msg" class="form-control" placeholder="Write a message..">
+                        </div>
 
-                            <!-- <div class="col-12 mb-3">
-                                <label for="user-msg" class="form-label"> Message </label>
-                                <textarea id="user-msg" class="form-control" rows="3"
+                        <!-- <div class="col-12 mb-3">
+                                <label for="partner-msg" class="form-label"> Message </label>
+                                <textarea id="partner-msg" class="form-control" rows="3"
                                     placeholder="Write a message.."></textarea>
                             </div> -->
 
-                            <div class="col-8 my-3 text-center">
-                                <button class=" btn-teal p-2 px-5"> Submit </button>
-                            </div>
+                        <input type="hidden" id="dynamic-form-type">
 
+                        <div class="col-8 my-3 text-center">
+                            <button class=" btn-teal p-2 px-5" id="dynamic-form-submit"> Submit </button>
                         </div>
 
-                    </form>
+                    </div>
+
 
                 </div>
             </div>
@@ -602,7 +668,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <form class="g-0">
+                    <form class="">
 
                         <h2 class="mb-3 fw-bold text-center"> Contact Us </h2>
 
@@ -621,12 +687,12 @@
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" id="contact-email" placeholder="Email address">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Email">
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-phone" class="form-label">Phone*</label>
-                                <input type="number" class="form-control" id="contact-phone" placeholder="Phone">
+                                <input type="tel" class="form-control" id="contact-phone" placeholder="Phone">
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
@@ -647,7 +713,7 @@
 
                             <div class="col-6 my-3 text-center">
 
-                                <button class=" btn-teal p-2 px-5"> Submit </button>
+                                <button class=" btn-teal p-2 px-5" id="contact-submit"> Submit </button>
 
                             </div>
 
@@ -667,6 +733,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
         integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
