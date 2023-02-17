@@ -335,12 +335,16 @@ section {
   /* height: 80vh; */
 }
 
+
 .consumer-solutions-text {
   position: absolute;
-  top: 30%;
-  left: 33%;
+  width: 423px;
+  top: 32%;
+  left: 35%;
   transform: translate(-50%, -50%);
 }
+
+
 
 .consumer-solutions-card {
   position: absolute;
@@ -420,7 +424,7 @@ section {
 }
 
 .footer-address {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer-btn {
@@ -626,4 +630,7 @@ section {
 
 ::placeholder { /* Most modern browsers support this now. */
  color:    #25292d !important;
+}
+.form-label{
+  color: white;
 }
