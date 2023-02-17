@@ -460,13 +460,13 @@ section {
 #contact-modal textarea {
   border: 0;
   padding: 1rem;
-  color: white !important;
+  color: black !important;
   border-radius: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(19, 163, 209, 0.4) 0%,
     rgba(0, 198, 177, 0.6) 100%
-  );
+  ); */
 }
 
 #signup-modal input:focus,
@@ -605,4 +605,25 @@ section {
     width: 40vw;
     /* max-width: 250px; */
   }
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #25292d !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #25292d !important;
+ opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #25292d !important;
+ opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    #25292d !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ color:    #25292d !important;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+ color:    #25292d !important;
 }
