@@ -74,6 +74,10 @@
     top: inherit;
   }
 
+  .section-header{
+    font-size: 1.7rem !important;
+  }
+
   .about-tab {
     font-size: 1.2rem;
   }
