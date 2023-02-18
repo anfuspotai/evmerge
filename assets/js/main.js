@@ -42,7 +42,7 @@ $("#subscribe-submit").click((e) => {
   console.log(payload);
 });
 
-$("#signup-submit").click((e) => {
+$("#signup-form").submit(function (e) {
   e.preventDefault();
 
   let payload = {};
@@ -58,12 +58,37 @@ $("#signup-submit").click((e) => {
 
   if (!payload.email) return console.log("Email is required!");
 
+  if (payload.fistname && payload.lastname && payload.email && payload.phone) {
+    swal(
+      "Good job!",
+      "we will get back to your as soon as possible",
+      "success"
+    );
+  } else {
+    alert("please enter your first-name, last-name, email and phone number");
+  }
+
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbyeoJQ4MXb0xloyP4OHiUhpWJ5bqos66jJU3hTS9JtobN3nXi9UktB1ZsdG5IsmhZSS/exec",
+    data: $(this).serialize(),
+    method: "post",
+    success: function (response) {
+      console.log(response.data);
+      $('.form-control').val('')
+      $('#signup-modal').modal('hide')
+      // window.location.reload()
+      //window.location.href="https://google.com"
+    },
+    error: function (err) {
+      console.log(err);
+    },
+  });
+
   console.log(payload);
 });
 
-$("#contact-submit").click((e) => {
+$("#contact-form").submit(function (e) {
   e.preventDefault();
-
   let payload = {};
 
   payload.fistname = $("#contact-fname").val();
@@ -76,10 +101,34 @@ $("#contact-submit").click((e) => {
 
   if (!payload.email) return console.log("Email is required!");
 
-  console.log(payload);
+  if (payload.fistname && payload.lastname && payload.email && payload.phone) {
+    swal(
+      "Good job!",
+      "we will get back to your as soon as possible",
+      "success"
+    );
+  } else {
+    alert("please enter your first-name, last-name, email and phone number");
+  }
+
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbzO2HciwEfQSGxC8Wlzwn3Wdo9q99HSmFpF5xr5k0s1jKuW9yu6RdL--Uv2_MRhTuXk_w/exec",
+    data: $(this).serialize(),
+    method: "post",
+    success: function (response) {
+      console.log(response.data);
+      $('.form-control').val('')
+      $('#contact-modal').modal('hide')
+      // window.location.reload()
+      //window.location.href="https://google.com"
+    },
+    error: function (err) {
+      console.log(err);
+    },
+  });
 });
 
-$("#dynamic-form-submit").click((e) => {
+$("#dynamic-form").submit(function (e) {
   e.preventDefault();
 
   let payload = {};
@@ -96,5 +145,29 @@ $("#dynamic-form-submit").click((e) => {
 
   if (!payload.email) return console.log("Email is required!");
 
-  console.log(payload);
+  if (payload.fistname && payload.lastname && payload.email && payload.phone) {
+    swal(
+      "Good job!",
+      "we will get back to your as soon as possible",
+      "success"
+    );
+  } else {
+    alert("please enter your first-name, last-name, email and phone number");
+  }
+
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbw37bPhDMVKk-6fBe-QWC7_9ISHt9aj9dl7aZcIUwUCQZPqAgy7yrA_ErNZGNVMiOow/exec",
+    data: $(this).serialize(),
+    method: "post",
+    success: function (response) {
+      console.log(response.data);
+      $('.form-control').val('')
+      $('#partner-modal').modal('hide')
+      // window.location.reload()
+      //window.location.href="https://google.com"
+    },
+    error: function (err) {
+      console.log(err);
+    },
+  });
 });
