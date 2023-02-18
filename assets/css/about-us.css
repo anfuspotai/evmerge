@@ -79,10 +79,11 @@
   }
 
   .team-card .team-title {
-    font-size: .8rem;
+    font-size: .7rem;
   }
 
   .team-card .team-designation {
     font-size: .7rem;
+    font-family: 'Montserrat-SemiBold';
   }
 }

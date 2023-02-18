@@ -263,6 +263,13 @@ a:hover {
   transform: scale(0.93);
 }
 
+.clost-btn {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+}
+
 .section-card-text {
   display: block;
   width: 90%;
@@ -335,7 +342,6 @@ section {
   /* height: 80vh; */
 }
 
-
 .consumer-solutions-text {
   position: absolute;
   width: 423px;
@@ -343,8 +349,6 @@ section {
   left: 35%;
   transform: translate(-50%, -50%);
 }
-
-
 
 .consumer-solutions-card {
   position: absolute;
@@ -440,8 +444,12 @@ section {
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.9rem;
 }
-.modal-body{
-  background: linear-gradient( 90deg, rgba(2, 120, 159, 0.9) 0%, rgba(0, 90, 81, 0.9) 100% ) !important;
+.modal-body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 159, 0.9) 0%,
+    rgba(0, 90, 81, 0.9) 100%
+  ) !important;
 }
 
 #signup-modal .modal-body,
@@ -523,7 +531,7 @@ section {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.accordion-body{
+.accordion-body {
   color: white !important;
 }
 
@@ -610,27 +618,33 @@ section {
     /* max-width: 250px; */
   }
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color:    #25292d !important;
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #25292d !important;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
- color:    #25292d !important;
- opacity:  1;
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #25292d !important;
+  opacity: 1;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
- color:    #25292d !important;
- opacity:  1;
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #25292d !important;
+  opacity: 1;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color:    #25292d !important;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #25292d !important;
 }
-::-ms-input-placeholder { /* Microsoft Edge */
- color:    #25292d !important;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #25292d !important;
 }
 
-::placeholder { /* Most modern browsers support this now. */
- color:    #25292d !important;
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #25292d !important;
 }
-.form-label{
+.form-label {
   color: white;
 }
