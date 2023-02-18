@@ -535,6 +535,11 @@ section {
   color: white !important;
 }
 
+.dynamic-form-title{
+  color: white;
+  text-align: center;
+}
+
 /* ************************************************************************** */
 @media screen and (max-width: 740px) {
   .landing-navbar {
