@@ -160,7 +160,6 @@
   width: 80%;
 }
 
-
 /* ************************************************************************** */
 @media screen and (max-width: 740px) {
   .landing-text-header {
@@ -168,6 +167,11 @@
   }
   .landing-text-desc {
     font-size: 0.8rem;
+  }
+
+  .fleet-card,
+  .card-img {
+    font-size: 0.7rem;
   }
 
   .solution-head {
@@ -201,6 +205,6 @@
   }
 
   .service-card.active {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }

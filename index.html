@@ -28,6 +28,25 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+        @media screen and (max-width: 740px) {
+            .landing-text {
+                top: 52%;
+                left: 45%;
+                width: 80%;
+                transform: translate(-50%, -50%);
+            }
+
+            .landing-text-desc {
+                font-size: .95rem;
+            }
+
+            .landing-text-header {
+                font-size: 2.2rem !important;
+            }
+        }
+    </style>
 </head>
 
 
@@ -151,7 +170,7 @@
                 EVMERGE is the catalyst enabling a structured disruption of the Auto industry in the region by Building
                 the network required and Communicating it with users. <br><br>
                 We are actively encouraging the adoption of EV’s in the region by offering a platform that will enable
-                Vehicle owners to seamlessly transition to EV’s with limited change to their existing lifestyle
+                Vehicle owners to seamlessly transition to EV’s with limited change to their existing lifestyle.
                 <br><br> COME JOIN US on our journey to enable this CHANGE.
 
             </p>
@@ -495,7 +514,7 @@
                                         data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                         aria-controls="flush-collapseTwo">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="ps-3">Chargin Solutions </span>
+                                            <span class="ps-3">Charging Solutions </span>
                                             <i class="fa-solid fa-chevron-down ps-3"></i>
                                         </div>
                                     </a>
@@ -548,29 +567,33 @@
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-fname" class="form-label">First Name*</label>
-                                <input type="text" class="form-control" name="First_Name" id="user-fname" placeholder="First Name" required>
+                                <input type="text" class="form-control" name="First_Name" id="user-fname"
+                                    placeholder="First Name" required>
 
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-lname" class="form-label">Last Name*</label>
-                                <input type="text" class="form-control" name="Last_Name" id="user-lname" placeholder="Last Name" required>
+                                <input type="text" class="form-control" name="Last_Name" id="user-lname"
+                                    placeholder="Last Name" required>
                             </div>
 
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" name="Email" id="user-email" placeholder="Email" required>
+                                <input type="email" class="form-control" name="Email" id="user-email"
+                                    placeholder="Email" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-phone" class="form-label">Phone*</label>
-                                <input type="tel" class="form-control" name="Phone" id="user-phone" placeholder="Phone" required>
+                                <input type="tel" class="form-control" name="Phone" id="user-phone" placeholder="Phone"
+                                    required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-country" class="form-label"> Country</label>
-                                <select id="user-country"  name="Country" class="form-select" required>
+                                <select id="user-country" name="Country" class="form-select" required>
                                     <option value=""> -- Select your country -- </option>
                                     <option value="UAE"> United Arab Emirates </option>
                                     <option value="Saudi Arabia"> Saudi Arabia </option>
@@ -584,18 +607,21 @@
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-city" class="form-label">City*</label>
-                                <input type="text" class="form-control" name="City" id="user-city" placeholder="City" required>
+                                <input type="text" class="form-control" name="City" id="user-city" placeholder="City"
+                                    required>
                             </div>
 
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-postal" class="form-label"> Postal code </label>
-                                <input type="number" class="form-control" name="Postal" id="user-postal" placeholder="Postal Code">
+                                <input type="number" class="form-control" name="Postal" id="user-postal"
+                                    placeholder="Postal Code">
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="user-address" class="form-label"> Address </label>
-                                <input type="text" class="form-control" name="Address" id="user-address" placeholder="Address">
+                                <input type="text" class="form-control" name="Address" id="user-address"
+                                    placeholder="Address">
                             </div>
                             <div class="mt-2">
                                 <input type="checkbox" class="" id="user-check" style="height: 15px; width: 15px;">
@@ -637,12 +663,14 @@
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-fname" class="form-label">First Name*</label>
-                                <input type="text" class="form-control" name="First_Name" id="partner-fname" placeholder="First Name" required>
+                                <input type="text" class="form-control" name="First_Name" id="partner-fname"
+                                    placeholder="First Name" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-lname" class="form-label">Last Name*</label>
-                                <input type="text" class="form-control" name="Last_Name" id="partner-lname" placeholder="Last Name" required>
+                                <input type="text" class="form-control" name="Last_Name" id="partner-lname"
+                                    placeholder="Last Name" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
@@ -655,28 +683,33 @@
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" name="Email" id="partner-email" placeholder="Email" required>
+                                <input type="email" class="form-control" name="Email" id="partner-email"
+                                    placeholder="Email" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-phone" class="form-label">Phone*</label>
-                                <input type="tel" class="form-control" name="Phone" id="partner-phone" placeholder="Phone" required>
+                                <input type="tel" class="form-control" name="Phone" id="partner-phone"
+                                    placeholder="Phone" required>
                             </div>
 
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-city" class="form-label">City*</label>
-                                <input type="text" class="form-control" name="City" id="partner-city" placeholder="City" required>
+                                <input type="text" class="form-control" name="City" id="partner-city" placeholder="City"
+                                    required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-location" class="form-label">Location*</label>
-                                <input type="text" class="form-control" name="Location" id="partner-location" placeholder="Location" required>
+                                <input type="text" class="form-control" name="Location" id="partner-location"
+                                    placeholder="Location" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-landmark" class="form-label">Nearest Landmark</label>
-                                <input type="text" class="form-control" name="Landmark" id="partner-landmark" placeholder="Landmark">
+                                <input type="text" class="form-control" name="Landmark" id="partner-landmark"
+                                    placeholder="Landmark">
                             </div>
 
                             <div class="col-12 mb-3">
@@ -724,33 +757,39 @@
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-fname" class="form-label">First Name*</label>
-                                <input type="text" class="form-control" name="First_Name" id="contact-fname" placeholder="First Name" required>
+                                <input type="text" class="form-control" name="First_Name" id="contact-fname"
+                                    placeholder="First Name" required>
                             </div>
 
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-lname" class="form-label">Last Name*</label>
-                                <input type="text" class="form-control" name="Last_Name" id="contact-lname" placeholder="Last Name" required>
+                                <input type="text" class="form-control" name="Last_Name" id="contact-lname"
+                                    placeholder="Last Name" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" name="Email" id="contact-email" placeholder="Email" required>
+                                <input type="email" class="form-control" name="Email" id="contact-email"
+                                    placeholder="Email" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-phone" class="form-label">Phone*</label>
-                                <input type="tel" class="form-control" name="Phone" id="contact-phone" placeholder="Phone" required>
+                                <input type="tel" class="form-control" name="Phone" id="contact-phone"
+                                    placeholder="Phone" required>
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-company" class="form-label">Company</label>
-                                <input type="text" class="form-control" name="Company" id="contact-company" placeholder="Company">
+                                <input type="text" class="form-control" name="Company" id="contact-company"
+                                    placeholder="Company">
                             </div>
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="contact-city" class="form-label">City</label>
-                                <input type="text" class="form-control" name="City" id="contact-city" placeholder="City">
+                                <input type="text" class="form-control" name="City" id="contact-city"
+                                    placeholder="City">
                             </div>
 
                             <div class="col-12 mb-3">

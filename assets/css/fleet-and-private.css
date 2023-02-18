@@ -137,6 +137,11 @@
     font-size: 0.8rem;
   }
 
+  .fleet-card,
+  .card-img {
+    font-size: 0.7rem;
+  }
+
   .service-title {
     font-size: 0.5rem;
   }
