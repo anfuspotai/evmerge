@@ -81,6 +81,10 @@ a:hover {
   padding-left: 3rem;
 }
 
+.navbar-brand img {
+  width: 200px;
+}
+
 .landing-navbar {
   margin: 0;
   padding: 0;
@@ -545,7 +549,7 @@ section {
   color: white !important;
 }
 
-.dynamic-form-title{
+.dynamic-form-title {
   color: white;
   text-align: center;
 }
@@ -555,6 +559,10 @@ section {
   .landing-navbar {
     font-size: 0.45rem;
     font-family: "Montserrat-Bold";
+  }
+
+  .navbar-brand img {
+    width: 150px;
   }
 
   .nav-link-landing {
