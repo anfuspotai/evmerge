@@ -15,22 +15,31 @@ $(".about-tab").click(function () {
 
 $(".service-description").toggle(false);
 
-$(".service-card").hover(function (e) {
-  $(".service-card.active").removeClass("active");
-  $(this).addClass("active");
+$(".service-card").hover(
+  function (e) {
+    // $(".service-card.active").removeClass("active");
+    // $(this).addClass("active");
 
-  $(this).find(".service-title").toggle(false);
-  $(".service-card").not(this).find(".service-description").toggle(false);
+    $(this).find(".service-title").toggle(false);
+    $(".service-card").not(this).find(".service-description").toggle(false);
 
-  $(this).find(".service-description").toggle(true);
-  $(".service-card").not(this).find(".service-title").toggle(true);
+    $(this).find(".service-description").toggle(true);
+    $(".service-card").not(this).find(".service-title").toggle(true);
 
-  $(this).find(".service-img").css("filter", "brightness(30%)");
-  $(".service-card")
-    .not(this)
-    .find(".service-img")
-    .css("filter", "brightness(60%)");
-});
+    $(this).find(".service-img").css("filter", "brightness(30%)");
+    $(".service-card")
+      .not(this)
+      .find(".service-img")
+      .css("filter", "brightness(60%)");
+  },
+  function (e) {
+    $(".service-card").find(".service-description").toggle(false);
+
+    $(".service-card").find(".service-title").toggle(true);
+
+    $(".service-img").css("filter", "brightness(60%)");
+  }
+);
 
 $("#subscribe-submit").click((e) => {
   let payload = {};
@@ -74,8 +83,8 @@ $("#signup-form").submit(function (e) {
     method: "post",
     success: function (response) {
       console.log(response.data);
-      $('.form-control').val('')
-      $('#signup-modal').modal('hide')
+      $(".form-control").val("");
+      $("#signup-modal").modal("hide");
       // window.location.reload()
       //window.location.href="https://google.com"
     },
@@ -117,8 +126,8 @@ $("#contact-form").submit(function (e) {
     method: "post",
     success: function (response) {
       console.log(response.data);
-      $('.form-control').val('')
-      $('#contact-modal').modal('hide')
+      $(".form-control").val("");
+      $("#contact-modal").modal("hide");
       // window.location.reload()
       //window.location.href="https://google.com"
     },
@@ -161,8 +170,8 @@ $("#dynamic-form").submit(function (e) {
     method: "post",
     success: function (response) {
       console.log(response.data);
-      $('.form-control').val('')
-      $('#partner-modal').modal('hide')
+      $(".form-control").val("");
+      $("#partner-modal").modal("hide");
       // window.location.reload()
       //window.location.href="https://google.com"
     },

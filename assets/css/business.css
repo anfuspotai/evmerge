@@ -64,8 +64,9 @@
   overflow: hidden;
 }
 
-.service-card.active {
-  transform: scale(1.3);
+.service-card.active,
+.service-card:hover {
+  transform: scale(1.25);
   z-index: 1;
 }
 
