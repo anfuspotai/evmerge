@@ -453,6 +453,7 @@ section {
 }
 
 #signup-modal .modal-body,
+#partner-modal .modal-body,
 #contact-modal .modal-body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: white;
@@ -468,6 +469,9 @@ section {
 
 #signup-modal input,
 #signup-modal textarea,
+#signup-modal select,
+#partner-modal input,
+#partner-modal textarea,
 #contact-modal input,
 #contact-modal textarea {
   border: 0;
@@ -483,6 +487,9 @@ section {
 
 #signup-modal input:focus,
 #signup-modal textarea:focus,
+#signup-modal select:focus,
+#partner-modal input:focus,
+#partner-modal textarea:focus,
 #contact-modal input:focus,
 #contact-modal textarea:focus {
   border: 0;
@@ -491,6 +498,9 @@ section {
 
 #signup-modal input::placeholder,
 #signup-modal textarea::placeholder,
+#signup-modal select::placeholder,
+#partner-modal input::placeholder,
+#partner-modal textarea::placeholder,
 #contact-modal input::placeholder,
 #contact-modal textarea::placeholder {
   color: rgba(255, 255, 255, 0.604);
