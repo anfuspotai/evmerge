@@ -69,8 +69,8 @@ $("#signup-form").submit(function (e) {
 
   if (payload.fistname && payload.lastname && payload.email && payload.phone) {
     swal(
-      "Good job!",
-      "we will get back to your as soon as possible",
+      "Thank you",
+      "we will get back to you as soon as possible",
       "success"
     );
   } else {
@@ -112,8 +112,8 @@ $("#contact-form").submit(function (e) {
 
   if (payload.fistname && payload.lastname && payload.email && payload.phone) {
     swal(
-      "Good job!",
-      "we will get back to your as soon as possible",
+      "Thank you",
+      "we will get back to you as soon as possible",
       "success"
     );
   } else {
@@ -156,8 +156,8 @@ $("#dynamic-form").submit(function (e) {
 
   if (payload.fistname && payload.lastname && payload.email && payload.phone) {
     swal(
-      "Good job!",
-      "we will get back to your as soon as possible",
+      "Thank you",
+      "we will get back to you as soon as possible",
       "success"
     );
   } else {
