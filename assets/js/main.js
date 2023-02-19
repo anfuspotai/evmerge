@@ -1,4 +1,4 @@
-function dynaminForm(title) {
+function dynamicForm(title) {
   $("#dynamic-form-title").html(title);
   $("#dynamic-form-type").val(title);
 
@@ -69,7 +69,7 @@ $("#signup-form").submit(function (e) {
   }
 
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyeoJQ4MXb0xloyP4OHiUhpWJ5bqos66jJU3hTS9JtobN3nXi9UktB1ZsdG5IsmhZSS/exec",
+    url: "https://script.google.com/macros/s/AKfycbyUu5MkCABZli9AOgxpxtue4lcGqxjRbMqxfRngcs-6Yui4s0PBDr62XnD9ortA-mzJ/exec",
     data: $(this).serialize(),
     method: "post",
     success: function (response) {
@@ -156,7 +156,7 @@ $("#dynamic-form").submit(function (e) {
   }
 
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbw37bPhDMVKk-6fBe-QWC7_9ISHt9aj9dl7aZcIUwUCQZPqAgy7yrA_ErNZGNVMiOow/exec",
+    url: "https://script.google.com/macros/s/AKfycbwcwTecPud572ipAAj7ZNsIa1-CKI4YABAcr3V9SHohWmTeGMF-LyS633PFf7MfgqkA/exec",
     data: $(this).serialize(),
     method: "post",
     success: function (response) {
