@@ -176,10 +176,11 @@ a:hover {
 }
 
 .navbar-toggler:focus,
+.navbar-toggler:active,
 .navbar-toggler:hover{
   border: 2px solid white;
 }
-.navbar-toggler:focus{
+.navbar-toggler{
   border: 1px solid white;
   color: white;
 }
