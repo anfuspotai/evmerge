@@ -475,8 +475,10 @@ section {
 #signup-modal textarea,
 #signup-modal select,
 #partner-modal input,
+#partner-modal select,
 #partner-modal textarea,
 #contact-modal input,
+#contact-modal select,
 #contact-modal textarea {
   border: 0;
   padding: 1rem;
@@ -494,7 +496,9 @@ section {
 #signup-modal select:focus,
 #partner-modal input:focus,
 #partner-modal textarea:focus,
+#partner-modal select:focus,
 #contact-modal input:focus,
+#contact-modal select:focus,
 #contact-modal textarea:focus {
   border: 0;
   box-shadow: none;
@@ -505,7 +509,9 @@ section {
 #signup-modal select::placeholder,
 #partner-modal input::placeholder,
 #partner-modal textarea::placeholder,
+#partner-modal select::placeholder,
 #contact-modal input::placeholder,
+#contact-modal select::placeholder,
 #contact-modal textarea::placeholder {
   color: rgba(255, 255, 255, 0.604);
   opacity: 1;
