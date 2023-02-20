@@ -1,3 +1,16 @@
+$(document).ready( function(e) {
+  $('#nav-link-dd1').click( e => {
+    e.preventDefault()
+    e.stopPropagation();
+    return null;
+  } )
+  $('#nav-link-dd2').click( e => {
+    e.preventDefault()
+    e.stopPropagation();
+    return null;
+  } )
+})
+
 function dynamicForm(title) {
   $("#dynamic-form-title").html(title);
   $("#dynamic-form-type").val(title);
@@ -172,6 +185,41 @@ $("#dynamic-form").submit(function (e) {
       console.log(response.data);
       $(".form-control").val("");
       $("#partner-modal").modal("hide");
+      // window.location.reload()
+      //window.location.href="https://google.com"
+    },
+    error: function (err) {
+      console.log(err);
+    },
+  });
+});
+
+
+$("#newsletter-form").submit(function (e) {
+  e.preventDefault();
+  let payload = {};
+
+  payload.email = $("#newsletter-email").val();
+
+  if (!payload.email) return console.log("Email is required!");
+
+  if (payload.email) {
+    swal(
+      "Thank you",
+      "we will get back to you as soon as possible",
+      "success"
+    );
+  } else {
+    alert("please enter your email");
+  }
+
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbwbsQfCevC8c8iaFPlPpVbVGAczpWCET3iTEEPEQYfgqUIJ06fxauhB4yZLcDQQ54Az/exec",
+    data: $(this).serialize(),
+    method: "post",
+    success: function (response) {
+      console.log(response.data);
+      $(".form-control").val("");
       // window.location.reload()
       //window.location.href="https://google.com"
     },

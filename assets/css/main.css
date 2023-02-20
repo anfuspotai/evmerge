@@ -166,12 +166,22 @@ a:hover {
   color: white !important;
   padding: 1rem;
   transition: ease-in-out 200ms all;
+  background: transparent !important
 }
 
 .dropdown-item:hover {
   color: white !important;
   background: transparent !important;
   transform: scale(1.05);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover{
+  border: 2px solid white;
+}
+.navbar-toggler:focus{
+  border: 1px solid white;
+  color: white;
 }
 
 .header-banner {

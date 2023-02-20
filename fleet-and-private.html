@@ -11,7 +11,8 @@
     <meta name="description"
         content=" EVMERGE is the catalyst enabling a structured disruption of the Auto industry in the region by Building the network and Communicating it with users.">
 
-    <meta name="keywords" content="ev charging stations, ev charging stations near me, ev charging station contractors, ev charging, ev charging station, free ev charging stations near me, ev charging stations map, ev charging near me, ev charging station near me">
+    <meta name="keywords"
+        content="ev charging stations, ev charging stations near me, ev charging station contractors, ev charging, ev charging station, free ev charging stations near me, ev charging stations map, ev charging near me, ev charging station near me">
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon.svg">
@@ -102,7 +103,7 @@
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#nav-modal">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars text-white"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-md-5 mb-2 mb-lg-0 text-center">
@@ -118,8 +119,7 @@
                         <ul class="dropdown-menu dropdown-menu-main" data-bs-popper="static">
                             <li><a class="dropdown-item" href="./consumer.html">Consumer Solution</a></li>
                             <li class="dropend dropdown-main-sub">
-                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                    aria-expanded="false">Business Solution</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Business Solution</a>
                                 <ul class="dropdown-menu dropdown-menu-main-sub" data-bs-popper="static">
                                     <li><a class="dropdown-item" href="./business-commercial-solution.html">Business &
                                             Commercial</a></li>
@@ -525,13 +525,12 @@
                 <div class="col-md-4 mb-3 px-md-5">
                     <span class="footer-head mb-5">Keep up to date with our journey.</span>
 
-                    <div class="w-100">
+                    <form id="newsletter-form" class="w-100">
                         <label for="newsletter-email" class="visually-hidden">Email address</label>
-                        <input id="newsletter-email" type="text" class="form-control mb-3 rounded-4 shadow-lg border-0"
-                            placeholder="Email">
-                        <button class="footer-btn shadow-sm btn-teal" id="subscribe-submit"
-                            type="button">Subscribe</button>
-                    </div>
+                        <input id="newsletter-email" name="Email" type="text"
+                            class="form-control mb-3 rounded-4 shadow-lg border-0" placeholder="Email">
+                        <button class="footer-btn shadow-sm btn-teal" type="submit">Subscribe</button>
+                    </form>
                 </div>
 
                 <div class="col-12 col-md-2 mb-3 d-flex justify-content-md-end justify-content-start mt-1 mt-md-0">
@@ -600,8 +599,7 @@
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <div class="row">
-                                            <a class="col-12 nav-modal-item-2 ps-4" href="./consumer.html"> Consumer
-                                                Solutions </a>
+
                                             <a class="col-12 nav-modal-item-2 ps-4"
                                                 href="./business-commercial-solution.html"> Business & Commercial
                                                 Solutions
@@ -703,8 +701,8 @@
                             </div>
                             <div class="mt-2 d-flex align-items-center justify-content-center">
                                 <label for="user-address" class="form-label">
-                                <input type="checkbox" class="mx-2" id="user-check" style="height: 15px; width: 15px;"
-                                    required>
+                                    <input type="checkbox" class="mx-2" id="user-check"
+                                        style="height: 15px; width: 15px;" required>
                                     I have read and agree to the <a href="./privacy-policy.html"><u>Privacy
                                             Policy</u></a>
                                     and <a href="./terms-and-conditions.html"><u>Terms and Conditions</u>.</a>
@@ -773,6 +771,19 @@
                                     placeholder="Phone" required>
                             </div>
 
+                            <div class="col-md-6 col-12 mb-3">
+                                <label for="partner-country" class="form-label"> Country </label>
+                                <select id="partner-country" name="Country" class="form-select" required>
+                                    <option value=""> -- Select your country -- </option>
+                                    <option value="UAE"> United Arab Emirates </option>
+                                    <option value="Saudi Arabia"> Saudi Arabia </option>
+                                    <option value="Oman"> Oman </option>
+                                    <option value="India"> India </option>
+                                    <option value="Kuwait"> Kuwait </option>
+                                    <option value="Bahrain"> Bahrain </option>
+                                </select>
+                            </div>
+
 
                             <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-city" class="form-label">City*</label>
@@ -792,7 +803,7 @@
                                     placeholder="Landmark">
                             </div>
 
-                            <div class="col-12 mb-3">
+                            <div class="col-md-6 col-12 mb-3">
                                 <label for="partner-msg" class="form-label"> Message </label>
                                 <input type="text" id="partner-msg" name="Message" class="form-control"
                                     placeholder="Write a message..">
