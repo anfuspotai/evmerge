@@ -165,7 +165,16 @@
     padding: 1rem 1.5rem;
     width: 100%;
   }
+
+  .step-card:hover {
+    transform: scale(1);
+  }
   .step-head {
     font-size: 1.5rem;
+  }
+
+  .benefit-card:hover {
+    transform: scale(1);
+    box-shadow: none;
   }
 }
